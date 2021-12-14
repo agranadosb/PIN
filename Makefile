@@ -10,8 +10,8 @@ chmod:
 	chmod +x planners/lpg/lpg-td
 	chmod +x planners/optic/optic-clp
 ff:
-	./planners/ff/metric_ff -o domain/${DOMAIN}.pddl -f problems/problem${PROBLEM}.pddl
+	./planners/metric_ff -o domain/${DOMAIN}.pddl -f problems/problem${PROBLEM}.pddl
 lpg:
-	./planners/lpg/lpg-td -o domain/${DOMAIN}.pddl -f problems/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt ${TIMESTEPS}
+	./planners/lpg-td -o domain/${DOMAIN}.pddl -f problems/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt ${TIMESTEPS}
 optic:
-	./planners/optic/optic-clp domain/${DOMAIN}.pddl problems/problem${PROBLEM}.pddl
+	./planners/optic-clp domain/${DOMAIN}.pddl problems/problem${PROBLEM}.pddl
