@@ -5,6 +5,10 @@ N=1
 
 .DEFAULT_GOAL := ff
 
+chmod:
+	chmod +x planners/ff/metric_ff
+	chmod +x planners/lpg/lpg-td
+	chmod +x planners/optic/optic-clp
 ff:
 	./planners/ff/metric_ff -o domain/${DOMAIN}.pddl -f problems/problem${PROBLEM}.pddl
 lpg:

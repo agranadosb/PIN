@@ -28,6 +28,12 @@ For example, if we want to execute lpg planner with n=1, with timesteps on the p
 make lpg PROBLEM=3 N=1 TIMESTEPS=-timesteps
 ```
 
+To give execution permissions, use:
+
+```sh
+make chmod
+```
+
 INSTRUCCIONES PARA EJECUTAR LOS PLANIFICADORES
 ----------------------------------------------
 
