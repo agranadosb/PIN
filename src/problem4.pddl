@@ -5,248 +5,248 @@
 (define (problem problema_simple) 
 (:domain puerto)
 (:objects 
-    g1 - grua
-    g2 - grua
+    grua1 - grua
+    grua2 - grua
     g3 - grua
 
-    p1 - pila
-    p2 - pila
-    p3 - pila
-    p4 - pila
-    p5 - pila
-    p6 - pila
+    pila1 - pila
+    pila2 - pila
+    pila3 - pila
+    pila4 - pila
+    pila5 - pila
+    pila6 - pila
     p7 - pila
     p8 - pila
 
 
-    m1 - muelle
-    m2 - muelle
+    muelle1 - muelle
+    muelle2 - muelle
     m3 - muelle
 
-    t1 - cinta
-    t2 - cinta
+    cinta1 - cinta
+    cinta2 - cinta
     t3 - cinta
     t4 - cinta
 
-    c1 - contenedor
-    c2 - contenedor
-    c3 - contenedor
-    c4 - contenedor
-    c5 - contenedor
-    c6 - contenedor
-    c7 - contenedor
-    c8 - contenedor
-    c9 - contenedor
-    c10 - contenedor
-    c11 - contenedor
-    c12 - contenedor
-    c13 - contenedor
-    c14 - contenedor
+    contenedor1 - contenedor
+    contenedor2 - contenedor
+    contenedor3 - contenedor
+    contenedor4 - contenedor
+    contenedor5 - contenedor
+    contenedor6 - contenedor
+    contenedor7 - contenedor
+    contenedor8 - contenedor
+    contenedor9 - contenedor
+    contenedor10 - contenedor
+    contenedor11 - contenedor
+    contenedor12 - contenedor
+    contenedor13 - contenedor
+    contenedor14 - contenedor
 
-    n0 - talla
-    n1 - talla
-    n2 - talla
-    n3 - talla
+    altura0 - talla
+    altura1 - talla
+    altura2 - talla
+    altura3 - talla
 )
 
 (:init
 
     ; Muelle donde se encuentra cada contenedor
-    (ubicado_en c1 m1)
-    (ubicado_en c3 m1)
+    (ubicado-en contenedor1 muelle1)
+    (ubicado-en contenedor3 muelle1)
 
-    (ubicado_en c2 m2)
-    (ubicado_en c4 m2)
-    (ubicado_en c5 m2)
-    (ubicado_en c6 m2)
-    (ubicado_en c7 m2)
-    (ubicado_en c8 m2)
-    (ubicado_en c10 m2)
-    (ubicado_en c9 m2)
+    (ubicado-en contenedor2 muelle2)
+    (ubicado-en contenedor4 muelle2)
+    (ubicado-en contenedor5 muelle2)
+    (ubicado-en contenedor6 muelle2)
+    (ubicado-en contenedor7 muelle2)
+    (ubicado-en contenedor8 muelle2)
+    (ubicado-en contenedor10 muelle2)
+    (ubicado-en contenedor9 muelle2)
 
-    (ubicado_en c11 m3)
-    (ubicado_en c12 m3)
-    (ubicado_en c13 m3)
-    (ubicado_en c14 m3)
+    (ubicado-en contenedor11 m3)
+    (ubicado-en contenedor12 m3)
+    (ubicado-en contenedor13 m3)
+    (ubicado-en contenedor14 m3)
 
     ; Contenedores en sus pilas
-    (ubicado_en c1 p1)
-    (ubicado_en c3 p3)
+    (ubicado-en contenedor1 pila1)
+    (ubicado-en contenedor3 pila3)
 
-    (ubicado_en c2 p4)
-    (ubicado_en c4 p4)
-    (ubicado_en c5 p4)
-    (ubicado_en c7 p5)
-    (ubicado_en c6 p5)
-    (ubicado_en c10 p6)
-    (ubicado_en c9 p6)
-    (ubicado_en c8 p6)
+    (ubicado-en contenedor2 pila4)
+    (ubicado-en contenedor4 pila4)
+    (ubicado-en contenedor5 pila4)
+    (ubicado-en contenedor7 pila5)
+    (ubicado-en contenedor6 pila5)
+    (ubicado-en contenedor10 pila6)
+    (ubicado-en contenedor9 pila6)
+    (ubicado-en contenedor8 pila6)
 
-    (ubicado_en c11 p7)
-    (ubicado_en c12 p7)
-    (ubicado_en c13 p8)
-    (ubicado_en c14 p8)
+    (ubicado-en contenedor11 p7)
+    (ubicado-en contenedor12 p7)
+    (ubicado-en contenedor13 p8)
+    (ubicado-en contenedor14 p8)
 
     ; Pilas en sus muelles
-    (ubicado_en p1 m1)
-    (ubicado_en p2 m1)
-    (ubicado_en p3 m1)
+    (ubicado-en pila1 muelle1)
+    (ubicado-en pila2 muelle1)
+    (ubicado-en pila3 muelle1)
 
-    (ubicado_en p4 m2)
-    (ubicado_en p5 m2)
-    (ubicado_en p6 m2)
+    (ubicado-en pila4 muelle2)
+    (ubicado-en pila5 muelle2)
+    (ubicado-en pila6 muelle2)
 
-    (ubicado_en p7 m3)
-    (ubicado_en p8 m3)
+    (ubicado-en p7 m3)
+    (ubicado-en p8 m3)
 
     ; Orden de los contenedores en cada pila
-    (encima c1 p1)
-    (encima c3 p3)
+    (encima contenedor1 pila1)
+    (encima contenedor3 pila3)
 
-    (encima c2 c5)
-    (encima c5 c4)
-    (encima c4 p4)
+    (encima contenedor2 contenedor5)
+    (encima contenedor5 contenedor4)
+    (encima contenedor4 pila4)
 
-    (encima c7 c6)
-    (encima c6 p5)
+    (encima contenedor7 contenedor6)
+    (encima contenedor6 pila5)
 
-    (encima c10 c9)
-    (encima c9 c8)
-    (encima c8 p6)
+    (encima contenedor10 contenedor9)
+    (encima contenedor9 contenedor8)
+    (encima contenedor8 pila6)
 
-    (encima c12 c11)
-    (encima c11 p7)
+    (encima contenedor12 contenedor11)
+    (encima contenedor11 p7)
 
-    (encima c14 c13)
-    (encima c13 p8)
+    (encima contenedor14 contenedor13)
+    (encima contenedor13 p8)
 
     ; Gruas en sus muelles
-    (ubicado_en g1 m1)
-    (ubicado_en g2 m2)
-    (ubicado_en g3 m3)
+    (ubicado-en grua1 muelle1)
+    (ubicado-en grua2 muelle2)
+    (ubicado-en g3 m3)
 
     ; Conexion carriles de cinta
-    (conecta_a t1 m1 m2)
-    (conecta_a t2 m2 m1)
-    (conecta_a t3 m1 m3)
-    (conecta_a t4 m3 m1)
+    (conecta_a cinta1 muelle1 muelle2)
+    (conecta_a cinta2 muelle2 muelle1)
+    (conecta_a t3 muelle1 m3)
+    (conecta_a t4 m3 muelle1)
 
     ; Tops de las pilas
-    (top c1 p1)
-    (top p2 p2)
-    (top c3 p3)
-    (top c2 p4)
-    (top c7 p5)
-    (top c10 p6)
-    (top c12 p7)
-    (top c14 p8)
+    (top contenedor1 pila1)
+    (top pila2 pila2)
+    (top contenedor3 pila3)
+    (top contenedor2 pila4)
+    (top contenedor7 pila5)
+    (top contenedor10 pila6)
+    (top contenedor12 p7)
+    (top contenedor14 p8)
 
     ; Control de tallas
-    (next n0 n1)
-    (next n1 n2)
-    (next n2 n3)
+    (next altura0 altura1)
+    (next altura1 altura2)
+    (next altura2 altura3)
 
     ; Gruas y carriles de cinta libres
-    (libre g1)
-    (libre g2)
+    (libre grua1)
+    (libre grua2)
     (libre g3)
-    (libre t1)
-    (libre t2)
+    (libre cinta1)
+    (libre cinta2)
     (libre t3)
     (libre t4)
 
     ; Altura actual de cada pila contando sus contenedores
-    (altura p1 n1)
-    (altura p2 n0)
-    (altura p3 n1)
-    (altura p4 n3)
-    (altura p5 n2)
-    (altura p6 n3)
-    (altura p7 n2)
-    (altura p8 n2)
+    (altura pila1 altura1)
+    (altura pila2 altura0)
+    (altura pila3 altura1)
+    (altura pila4 altura3)
+    (altura pila5 altura2)
+    (altura pila6 altura3)
+    (altura p7 altura2)
+    (altura p8 altura2)
 
     ; Contendores disponibles
-    (disponible c1)
-    (disponible c3)
-    (disponible c2)
-    (disponible c7)
-    (disponible c10)
-    (disponible c12)
-    (disponible c14)
+    (disponible contenedor1)
+    (disponible contenedor3)
+    (disponible contenedor2)
+    (disponible contenedor7)
+    (disponible contenedor10)
+    (disponible contenedor12)
+    (disponible contenedor14)
     ; ya que es un verde sobre un verde
-    (disponible c4)
+    (disponible contenedor4)
     
 
     ; Contenedores verdes
     
-    (verde c4)
-    (verde c5)
-    (verde c9)
-    (verde c13)
+    (verde contenedor4)
+    (verde contenedor5)
+    (verde contenedor9)
+    (verde contenedor13)
 
     ; Contenedores no verdes
-    (no_verde c1)
-    (no_verde c2)
-    (no_verde c3)
-    (no_verde c6)
-    (no_verde c7)
-    (no_verde c8)
-    (no_verde c10)
-    (no_verde c11)
-    (no_verde c12)
-    (no_verde c14)
+    (no-verde contenedor1)
+    (no-verde contenedor2)
+    (no-verde contenedor3)
+    (no-verde contenedor6)
+    (no-verde contenedor7)
+    (no-verde contenedor8)
+    (no-verde contenedor10)
+    (no-verde contenedor11)
+    (no-verde contenedor12)
+    (no-verde contenedor14)
 
     ; Hay que marcar que las pilas son no verdes
-    (no_verde p1)
-    (no_verde p2)
-    (no_verde p3)
-    (no_verde p4)
-    (no_verde p5)
-    (no_verde p6)
-    (no_verde p7)
-    (no_verde p8)
+    (no-verde pila1)
+    (no-verde pila2)
+    (no-verde pila3)
+    (no-verde pila4)
+    (no-verde pila5)
+    (no-verde pila6)
+    (no-verde p7)
+    (no-verde p8)
 
     ; Hay que ubicar una pila en si misma para poder dejar contenedores en pilas vacias
-    (ubicado_en p1 p1)
-    (ubicado_en p2 p2)
-    (ubicado_en p3 p3)
-    (ubicado_en p5 p5)
-    (ubicado_en p6 p6)
-    (ubicado_en p4 p4)
-    (ubicado_en p7 p7)
-    (ubicado_en p8 p8)
+    (ubicado-en pila1 pila1)
+    (ubicado-en pila2 pila2)
+    (ubicado-en pila3 pila3)
+    (ubicado-en pila5 pila5)
+    (ubicado-en pila6 pila6)
+    (ubicado-en pila4 pila4)
+    (ubicado-en p7 p7)
+    (ubicado-en p8 p8)
 
     ; Alt max de pila por muelle
-    ; La alt max en m1 es 1
-    (no_es_alt_max n0 m1)
-    (no_es_alt_max n1 m1)
-    (no_es_alt_max n2 m1)
+    ; La alt max en muelle1 es 1
+    (no-altura-max altura0 muelle1)
+    (no-altura-max altura1 muelle1)
+    (no-altura-max altura2 muelle1)
 
-    ; La alt max en m2 es 3
-    (no_es_alt_max n0 m2)
-    (no_es_alt_max n1 m2)
-    (no_es_alt_max n2 m2)
-    (no_es_alt_max n3 m2)
+    ; La alt max en muelle2 es 3
+    (no-altura-max altura0 muelle2)
+    (no-altura-max altura1 muelle2)
+    (no-altura-max altura2 muelle2)
+    (no-altura-max altura3 muelle2)
 
     ; La alt max en m3 es 3
-    (no_es_alt_max n0 m3)
-    (no_es_alt_max n1 m3)
-    (no_es_alt_max n2 m3)
+    (no-altura-max altura0 m3)
+    (no-altura-max altura1 m3)
+    (no-altura-max altura2 m3)
 
 )
 
 (:goal (and
-    (ubicado_en c9 m1)
-    (disponible c9)
+    (ubicado-en contenedor9 muelle1)
+    (disponible contenedor9)
 
-    (ubicado_en c5 m1)
-    (disponible c5)
+    (ubicado-en contenedor5 muelle1)
+    (disponible contenedor5)
 
-    (ubicado_en c4 m1)
-    (disponible c4)
+    (ubicado-en contenedor4 muelle1)
+    (disponible contenedor4)
 
-    (ubicado_en c13 m1)
-    (disponible c13)
+    (ubicado-en contenedor13 muelle1)
+    (disponible contenedor13)
 
 ))
 )
