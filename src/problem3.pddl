@@ -36,10 +36,14 @@
     contenedor12 - contenedor
     contenedor13 - contenedor
 
-    altura0 - talla
-    altura1 - talla
-    altura2 - talla
-    altura3 - talla
+    altura_muelle1_0 - altura
+    altura_muelle1_1 - altura
+    altura_muelle1_2 - altura
+
+    altura_muelle2_0 - altura
+    altura_muelle2_1 - altura
+    altura_muelle2_2 - altura
+    altura_muelle2_3 - altura
 )
 
 (:init
@@ -126,10 +130,13 @@
     (top contenedor10 pila6)
     (top contenedor13 pila7)
 
-    ; Control de tallas
-    (next altura0 altura1)
-    (next altura1 altura2)
-    (next altura2 altura3)
+    ; Control de alturas
+    (next altura_muelle1_0 altura_muelle1_1)
+    (next altura_muelle1_1 altura_muelle1_2)
+
+    (next altura_muelle2_0 altura_muelle2_1)
+    (next altura_muelle2_1 altura_muelle2_2)
+    (next altura_muelle2_2 altura_muelle2_3)
 
     ; Gruas y carriles de cinta libres
     (libre grua1)
@@ -138,13 +145,13 @@
     (libre cinta2)
 
     ; Altura actual de cada pila contando sus contenedores
-    (altura pila1 altura2)
-    (altura pila2 altura1)
-    (altura pila3 altura1)
-    (altura pila4 altura1)
-    (altura pila5 altura2)
-    (altura pila6 altura3)
-    (altura pila7 altura3)
+    (altura pila1 altura_muelle1_2)
+    (altura pila2 altura_muelle1_1)
+    (altura pila3 altura_muelle1_1)
+    (altura pila4 altura_muelle2_1)
+    (altura pila5 altura_muelle2_2)
+    (altura pila6 altura_muelle2_3)
+    (altura pila7 altura_muelle2_3)
 
     ; Contendores disponibles
     (disponible contenedor2)
@@ -189,19 +196,6 @@
     (ubicado-en pila5 pila5)
     (ubicado-en pila6 pila6)
     (ubicado-en pila7 pila7)
-
-    ; Alt max de pila por muelle
-    ; La alt max en muelle1 es 2
-    (no-altura-max altura0 muelle1)
-    (no-altura-max altura1 muelle1)
-    (no-altura-max altura2 muelle1)
-
-    ; La alt max en muelle2 es 3
-    (no-altura-max altura0 muelle2)
-    (no-altura-max altura1 muelle2)
-    (no-altura-max altura2 muelle2)
-    (no-altura-max altura3 muelle2)
-
 )
 
 (:goal (and

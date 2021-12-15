@@ -32,10 +32,10 @@
     contenedor10 - contenedor
     contenedor11 - contenedor
 
-    altura0 - talla
-    altura1 - talla
-    altura2 - talla
-    altura3 - talla
+    altura0 - altura
+    altura1 - altura
+    altura2 - altura
+    altura3 - altura
 )
 
 (:init
@@ -111,7 +111,7 @@
     (top contenedor2 pila5 )
     (top contenedor6 pila6)
 
-    ; Control de tallas
+    ; Control de alturas
     (next altura0 altura1)
     (next altura1 altura2)
     (next altura2 altura3)
@@ -168,20 +168,6 @@
     (ubicado-en pila5 pila5)
     (ubicado-en pila6 pila6)
     (ubicado-en pila4 pila4)
-
-    ; Alt max de pila por muelle
-    ; La alt max en muelle1 es 3
-    (no-altura-max altura0 muelle1)
-    (no-altura-max altura1 muelle1)
-    (no-altura-max altura2 muelle1)
-    (no-altura-max altura3 muelle1)
-
-    ; La alt max en muelle2 es 3
-    (no-altura-max altura0 muelle2)
-    (no-altura-max altura1 muelle2)
-    (no-altura-max altura2 muelle2)
-    (no-altura-max altura3 muelle2)
-
 )
 
 (:goal (and

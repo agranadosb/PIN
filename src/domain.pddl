@@ -4,7 +4,7 @@
 
 (define (domain puerto)
   (:requirements :strips :typing)
-  (:types cinta muelle grua pila talla contenedor - object)
+  (:types cinta muelle grua pila altura contenedor - object)
   (:predicates 
 		; Indica si un contenedor es verde
 		(verde ?c - contenedor)
@@ -36,13 +36,11 @@
 		(conecta_a ?ct - cinta ?m_o - muelle ?m_d - muelle)
 
 		; Este predica se utiliza para controlar la altura maxima de las pilas
-		(next ?cinta1 - talla ?cinta2 - talla)
+		(next ?cinta1 - altura ?cinta2 - altura)
 
 		; Indica la altura actual de la pila
-		(altura ?p - pila ?t - talla)
+		(altura ?p - pila ?t - altura)
 
-		; Indica que tallas no son la alt. maxima de las pilas por muelle.
-		(no-altura-max ?t - talla ?m - muelle)
   )
 
   (:action coger-pila
@@ -51,9 +49,9 @@
 			?grua - grua
 			?pila - pila
 			?contenedor - contenedor
-			?talla_pila - talla
+			?altura_pila - altura
 			?objeto_base - (either pila contenedor)
-			?talla_anterior - talla
+			?altura_anterior - altura
 		)
 		:precondition (
 			and
@@ -65,8 +63,8 @@
 			(top ?contenedor ?pila)
 			(encima ?contenedor ?objeto_base)
 			(disponible ?contenedor)
-			(altura ?pila ?talla_pila)
-			(next ?talla_anterior ?talla_pila)
+			(altura ?pila ?altura_pila)
+			(next ?altura_anterior ?altura_pila)
 		)
 		:effect(
 			and
@@ -78,8 +76,8 @@
 			(not (disponible ?contenedor))
 			(disponible ?objeto_base)
 			(top ?objeto_base ?pila)
-			(not (altura ?pila ?talla_pila))
-			(altura ?pila ?talla_anterior)
+			(not (altura ?pila ?altura_pila))
+			(altura ?pila ?altura_anterior)
 		)
   )
 
@@ -89,9 +87,9 @@
 			?grua - grua
 			?pila - pila
 			?contenedor - contenedor
-			?talla_pila - talla
+			?altura_pila - altura
 			?objeto_base - (either pila contenedor)
-			?talla_posterior - talla
+			?altura_posterior - altura
 		)
 		:precondition(
 			and
@@ -101,9 +99,8 @@
 			(ubicado-en ?objeto_base ?pila)
 			(top ?objeto_base ?pila)
 			(no-verde ?objeto_base)
-			(altura ?pila ?talla_pila)
-			(next ?talla_pila ?talla_posterior)
-			(no-altura-max ?talla_posterior ?muelle)
+			(altura ?pila ?altura_pila)
+			(next ?altura_pila ?altura_posterior)
 		)
 		:effect(
 			and
@@ -113,8 +110,8 @@
 			(encima ?contenedor ?objeto_base)
 			(top ?contenedor ?pila)
 			(not (top ?objeto_base ?pila))
-			(altura ?pila ?talla_posterior)
-			(not (altura ?pila ?talla_pila))
+			(altura ?pila ?altura_posterior)
+			(not (altura ?pila ?altura_pila))
 			(disponible ?contenedor)
 			(not (disponible ?objeto_base))
 		)
@@ -126,9 +123,9 @@
 			?grua - grua
 			?pila - pila
 			?contenedor_grua - contenedor
-			?talla_pila - talla
+			?altura_pila - altura
 			?contenedor_pila - contenedor
-			?talla_posterior - talla
+			?altura_posterior - altura
 		)
 		:precondition(
 			and
@@ -139,9 +136,8 @@
 			(top ?contenedor_pila ?pila)
 			(verde ?contenedor_grua)
 			(verde ?contenedor_pila)
-			(altura ?pila ?talla_pila)
-			(next ?talla_pila ?talla_posterior)
-			(no-altura-max ?talla_posterior ?muelle)
+			(altura ?pila ?altura_pila)
+			(next ?altura_pila ?altura_posterior)
 		)
 		:effect(
 			and
@@ -151,8 +147,8 @@
 			(encima ?contenedor_grua ?contenedor_pila)
 			(top ?contenedor_grua ?pila)
 			(not (top ?contenedor_pila ?pila))
-			(altura ?pila ?talla_posterior)
-			(not (altura ?pila ?talla_pila))
+			(altura ?pila ?altura_posterior)
+			(not (altura ?pila ?altura_pila))
 			(disponible ?contenedor_grua)
 		)
   )
