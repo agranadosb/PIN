@@ -7,8 +7,8 @@
 (:objects 
     grua1 - grua
     grua2 - grua
-    g3 - grua
-    g4 - grua
+    grua3 - grua
+    grua4 - grua
 
     pila1 - pila
     pila2 - pila
@@ -16,18 +16,18 @@
     pila4 - pila
     pila5 - pila
     pila6 - pila
-    p7 - pila
-    p8 - pila
+    pila7 - pila
+    pila8 - pila
 
 
     muelle1 - muelle
     muelle2 - muelle
-    m3 - muelle
+    muelle3 - muelle
 
     cinta1 - cinta
     cinta2 - cinta
-    t3 - cinta
-    t4 - cinta
+    cinta3 - cinta
+    cinta4 - cinta
 
     contenedor1 - contenedor
     contenedor2 - contenedor
@@ -65,10 +65,10 @@
     (ubicado-en contenedor10 muelle2)
     (ubicado-en contenedor9 muelle2)
 
-    (ubicado-en contenedor11 m3)
-    (ubicado-en contenedor12 m3)
-    (ubicado-en contenedor13 m3)
-    (ubicado-en contenedor14 m3)
+    (ubicado-en contenedor11 muelle3)
+    (ubicado-en contenedor12 muelle3)
+    (ubicado-en contenedor13 muelle3)
+    (ubicado-en contenedor14 muelle3)
 
     ; Contenedores en sus pilas
     (ubicado-en contenedor1 pila1)
@@ -83,10 +83,10 @@
     (ubicado-en contenedor9 pila6)
     (ubicado-en contenedor8 pila6)
 
-    (ubicado-en contenedor11 p7)
-    (ubicado-en contenedor12 p7)
-    (ubicado-en contenedor13 p8)
-    (ubicado-en contenedor14 p8)
+    (ubicado-en contenedor11 pila7)
+    (ubicado-en contenedor12 pila7)
+    (ubicado-en contenedor13 pila8)
+    (ubicado-en contenedor14 pila8)
 
     ; Pilas en sus muelles
     (ubicado-en pila1 muelle1)
@@ -97,8 +97,8 @@
     (ubicado-en pila5 muelle2)
     (ubicado-en pila6 muelle2)
 
-    (ubicado-en p7 m3)
-    (ubicado-en p8 m3)
+    (ubicado-en pila7 muelle3)
+    (ubicado-en pila8 muelle3)
 
     ; Orden de los contenedores en cada pila
     (encima contenedor1 pila1)
@@ -116,22 +116,22 @@
     (encima contenedor8 pila6)
 
     (encima contenedor12 contenedor11)
-    (encima contenedor11 p7)
+    (encima contenedor11 pila7)
 
     (encima contenedor14 contenedor13)
-    (encima contenedor13 p8)
+    (encima contenedor13 pila8)
 
     ; Gruas en sus muelles
     (ubicado-en grua1 muelle1)
-    (ubicado-en g4 muelle1)
+    (ubicado-en grua4 muelle1)
     (ubicado-en grua2 muelle2)
-    (ubicado-en g3 m3)
+    (ubicado-en grua3 muelle3)
 
     ; Conexion carriles de cinta
     (conecta_a cinta1 muelle1 muelle2)
     (conecta_a cinta2 muelle2 muelle1)
-    (conecta_a t3 muelle1 m3)
-    (conecta_a t4 m3 muelle1)
+    (conecta_a cinta3 muelle1 muelle3)
+    (conecta_a cinta4 muelle3 muelle1)
 
     ; Tops de las pilas
     (top contenedor1 pila1)
@@ -140,8 +140,8 @@
     (top contenedor2 pila4)
     (top contenedor7 pila5)
     (top contenedor10 pila6)
-    (top contenedor12 p7)
-    (top contenedor14 p8)
+    (top contenedor12 pila7)
+    (top contenedor14 pila8)
 
     ; Control de tallas
     (next altura0 altura1)
@@ -151,12 +151,12 @@
     ; Gruas y carriles de cinta libres
     (libre grua1)
     (libre grua2)
-    (libre g3)
-    (libre g4)
+    (libre grua3)
+    (libre grua4)
     (libre cinta1)
     (libre cinta2)
-    (libre t3)
-    (libre t4)
+    (libre cinta3)
+    (libre cinta4)
 
     ; Altura actual de cada pila contando sus contenedores
     (altura pila1 altura1)
@@ -165,8 +165,8 @@
     (altura pila4 altura3)
     (altura pila5 altura2)
     (altura pila6 altura3)
-    (altura p7 altura2)
-    (altura p8 altura2)
+    (altura pila7 altura2)
+    (altura pila8 altura2)
 
     ; Contendores disponibles
     (disponible contenedor1)
@@ -206,8 +206,8 @@
     (no-verde pila4)
     (no-verde pila5)
     (no-verde pila6)
-    (no-verde p7)
-    (no-verde p8)
+    (no-verde pila7)
+    (no-verde pila8)
 
     ; Hay que ubicar una pila en si misma para poder dejar contenedores en pilas vacias
     (ubicado-en pila1 pila1)
@@ -216,8 +216,8 @@
     (ubicado-en pila5 pila5)
     (ubicado-en pila6 pila6)
     (ubicado-en pila4 pila4)
-    (ubicado-en p7 p7)
-    (ubicado-en p8 p8)
+    (ubicado-en pila7 pila7)
+    (ubicado-en pila8 pila8)
 
     ; Alt max de pila por muelle
     ; La alt max en muelle1 es 1
@@ -231,10 +231,10 @@
     (no-altura-max altura2 muelle2)
     (no-altura-max altura3 muelle2)
 
-    ; La alt max en m3 es 3
-    (no-altura-max altura0 m3)
-    (no-altura-max altura1 m3)
-    (no-altura-max altura2 m3)
+    ; La alt max en muelle3 es 3
+    (no-altura-max altura0 muelle3)
+    (no-altura-max altura1 muelle3)
+    (no-altura-max altura2 muelle3)
 
 )
 

@@ -8,14 +8,13 @@
     grua1 - grua
     grua2 - grua
 
-
     pila1 - pila
     pila2 - pila
     pila3 - pila
     pila4 - pila
     pila5 - pila
     pila6 - pila
-    p7 - pila
+    pila7 - pila
 
     muelle1 - muelle
     muelle2 - muelle
@@ -75,9 +74,9 @@
     (ubicado-en contenedor9 pila6)
     (ubicado-en contenedor10 pila6)
 
-    (ubicado-en contenedor11 p7)
-    (ubicado-en contenedor12 p7)
-    (ubicado-en contenedor13 p7)
+    (ubicado-en contenedor11 pila7)
+    (ubicado-en contenedor12 pila7)
+    (ubicado-en contenedor13 pila7)
 
     ; Pilas en sus muelles
     (ubicado-en pila1 muelle1)
@@ -87,7 +86,7 @@
     (ubicado-en pila4 muelle2)
     (ubicado-en pila5 muelle2)
     (ubicado-en pila6 muelle2)
-    (ubicado-en p7 muelle2)
+    (ubicado-en pila7 muelle2)
 
     ; Orden de los contenedores en cada pila
     (encima contenedor2 contenedor1)
@@ -108,7 +107,7 @@
 
     (encima contenedor13 contenedor12)
     (encima contenedor12 contenedor11)
-    (encima contenedor11 p7)
+    (encima contenedor11 pila7)
 
     ; Gruas en sus muelles
     (ubicado-en grua1 muelle1)
@@ -125,7 +124,7 @@
     (top contenedor5 pila4)
     (top contenedor7 pila5)
     (top contenedor10 pila6)
-    (top contenedor13 p7)
+    (top contenedor13 pila7)
 
     ; Control de tallas
     (next altura0 altura1)
@@ -145,7 +144,7 @@
     (altura pila4 altura1)
     (altura pila5 altura2)
     (altura pila6 altura3)
-    (altura p7 altura3)
+    (altura pila7 altura3)
 
     ; Contendores disponibles
     (disponible contenedor2)
@@ -180,7 +179,7 @@
     (no-verde pila4)
     (no-verde pila5)
     (no-verde pila6)
-    (no-verde p7)
+    (no-verde pila7)
 
     ; Hay que ubicar una pila en si misma para poder dejar contenedores en pilas vacias
     (ubicado-en pila1 pila1)
@@ -189,7 +188,7 @@
     (ubicado-en pila4 pila4)
     (ubicado-en pila5 pila5)
     (ubicado-en pila6 pila6)
-    (ubicado-en p7 p7)
+    (ubicado-en pila7 pila7)
 
     ; Alt max de pila por muelle
     ; La alt max en muelle1 es 2
