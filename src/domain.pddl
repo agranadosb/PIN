@@ -45,14 +45,14 @@
 		(no-altura-max ?t - talla ?m - muelle)
   )
 
-  (:action grua-coger-pila
+  (:action coger-pila
 		:parameters (
 			?muelle - muelle
 			?grua - grua
 			?pila - pila
 			?contenedor - contenedor
-			?objeto_base - (either pila contenedor)
 			?talla_pila - talla
+			?objeto_base - (either pila contenedor)
 			?talla_anterior - talla
 		)
 		:precondition (
@@ -83,15 +83,15 @@
 		)
   )
 
-  (:action grua-dejar-blanco-pila
+  (:action dejar-blanco-pila
 		:parameters (
 			?muelle - muelle
 			?grua - grua
 			?pila - pila
 			?contenedor - contenedor
-			?objeto_base - (either pila contenedor)
 			?talla_pila - talla
-			?talla_anterior - talla
+			?objeto_base - (either pila contenedor)
+			?talla_posterior - talla
 		)
 		:precondition(
 			and
@@ -102,8 +102,8 @@
 			(top ?objeto_base ?pila)
 			(no-verde ?objeto_base)
 			(altura ?pila ?talla_pila)
-			(next ?talla_pila ?talla_anterior)
-			(no-altura-max ?talla_anterior ?muelle)
+			(next ?talla_pila ?talla_posterior)
+			(no-altura-max ?talla_posterior ?muelle)
 		)
 		:effect(
 			and
@@ -113,22 +113,22 @@
 			(encima ?contenedor ?objeto_base)
 			(top ?contenedor ?pila)
 			(not (top ?objeto_base ?pila))
-			(altura ?pila ?talla_anterior)
+			(altura ?pila ?talla_posterior)
 			(not (altura ?pila ?talla_pila))
 			(disponible ?contenedor)
 			(not (disponible ?objeto_base))
 		)
   )
 
-  (:action grua-dejar-verde-verde
+  (:action dejar-verde-verde
 		:parameters (
 			?muelle - muelle
 			?grua - grua
 			?pila - pila
 			?contenedor_grua - contenedor
-			?contenedor_pila - contenedor
 			?talla_pila - talla
-			?talla_anterior - talla
+			?contenedor_pila - contenedor
+			?talla_posterior - talla
 		)
 		:precondition(
 			and
@@ -140,8 +140,8 @@
 			(verde ?contenedor_grua)
 			(verde ?contenedor_pila)
 			(altura ?pila ?talla_pila)
-			(next ?talla_pila ?talla_anterior)
-			(no-altura-max ?talla_anterior ?muelle)
+			(next ?talla_pila ?talla_posterior)
+			(no-altura-max ?talla_posterior ?muelle)
 		)
 		:effect(
 			and
@@ -151,13 +151,13 @@
 			(encima ?contenedor_grua ?contenedor_pila)
 			(top ?contenedor_grua ?pila)
 			(not (top ?contenedor_pila ?pila))
-			(altura ?pila ?talla_anterior)
+			(altura ?pila ?talla_posterior)
 			(not (altura ?pila ?talla_pila))
 			(disponible ?contenedor_grua)
 		)
   )
 
-  (:action grua-coger-cinta
+  (:action coger-cinta
 	    :parameters (
 	    	?cinta - cinta
 	    	?muelle_origen - muelle
@@ -182,7 +182,7 @@
 		)
   )
 
-  (:action grua-dejar-cinta
+  (:action dejar-cinta
 	    :parameters (
 	    	?cinta - cinta
 	    	?muelle_origen - muelle
