@@ -1,9 +1,8 @@
+(define (problem problema_simple) 
+(:domain puerto)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; PUERTO Prob. Enunciado de Daniel P. y Alejandro G.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(define (problem problema_simple) 
-(:domain puerto)
 (:objects 
     g1 - grua
     g2 - grua
@@ -186,7 +185,6 @@
 )
 
 (:goal (and
-
     (ubicado_en c3 m1)
     (ubicado_en c4 m1)
     (ubicado_en c7 m1)
