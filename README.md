@@ -13,8 +13,8 @@ Preparar diapositivas.
     - 1 minutos exlicar problema
     - 3 minutos exlicar problema específico
     - 3 minutos hechos
-    - 3 minutos acciones
-    - 3 minutos resultados
+    - 2 minutos acciones
+    - 4 minutos resultados
     - 2 minutos preguntas
 
 Usage
