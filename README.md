@@ -4,18 +4,11 @@ PIN project
 TODO
 ----
 
-Script para medir tiempos, lpg y optic ejecutar 3 veces el mismo problema, comparar tiempos y pasos en encontrar la solución.
+Script para crear problemas.
 
-Preparar diapositivas.
+Implementar numerico.
 
-- Explicar un poco del problema
-- Tiempos 15 minutos
-    - 1 minutos exlicar problema DANI
-    - 3 minutos exlicar problema específico DANI
-    - 3 minutos hechos DANI - ALEX
-    - 2 minutos acciones - ALEX
-    - 4 minutos resultados - ALEX
-    - 2 minutos preguntas
+Implementar temporal (sólo optic y lpg).
 
 Usage
 -----
