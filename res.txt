@@ -1,4 +1,5 @@
 ff-1-0: Seconds=0.04132080078125 MaxFacts=12
+
 lpg-1-0: Seconds=0.7416901588439941 MaxFacts=12
 lpg-1-1: Seconds=0.15201234817504883 MaxFacts=12
 lpg-1-2: Seconds=20.540351390838623 MaxFacts=12
@@ -6,6 +7,7 @@ lpg-1-3: Seconds=4.687365293502808 MaxFacts=12
 lpg-1-4: Seconds=2.9051389694213867 MaxFacts=12
 lpg-1-5: Seconds=3.827641487121582 MaxFacts=12
 lpg-1-6: Seconds=5.820154905319214 MaxFacts=12
+
 lpg-t-1-0: Seconds=5.988621473312378 MaxFacts=222
 lpg-t-1-1: Seconds=4.354004859924316 MaxFacts=12
 lpg-t-1-2: Seconds=0.5961244106292725 MaxFacts=144
@@ -13,10 +15,14 @@ lpg-t-1-3: Seconds=0.18935751914978027 MaxFacts=12
 lpg-t-1-4: Seconds=4.629564523696899 MaxFacts=12
 lpg-t-1-5: Seconds=0.19100666046142578 MaxFacts=12
 lpg-t-1-6: Seconds=0.7672009468078613 MaxFacts=172
+
 optic-1-0: Seconds=418.23949790000916 MaxFacts=12
 optic-1-1: Seconds=55.64041209220886 MaxFacts=12
 optic-1-2: Seconds=36.2155601978302 MaxFacts=12
+
+
 ff-3-0: Seconds=0.0623166561126709 MaxFacts=22
+
 lpg-3-0: Seconds=2.150815963745117 MaxFacts=141
 lpg-3-1: Seconds=1205.6350655555725 MaxFacts=0
 lpg-3-2: Seconds=354.5236985683441 MaxFacts=100
@@ -24,6 +30,7 @@ lpg-3-3: Seconds=0.35922670364379883 MaxFacts=32
 lpg-3-4: Seconds=68.09728622436523 MaxFacts=114
 lpg-3-5: Seconds=455.63523149490356 MaxFacts=41
 lpg-3-6: Seconds=1200.2644443511963 MaxFacts=0
+
 lpg-t-3-0: Seconds=1200.3749814033508 MaxFacts=0
 lpg-t-3-1: Seconds=1200.314481496811 MaxFacts=0
 lpg-t-3-2: Seconds=1200.499619960785 MaxFacts=0
@@ -31,10 +38,13 @@ lpg-t-3-3: Seconds=1200.5585658550262 MaxFacts=0
 lpg-t-3-4: Seconds=11.607885360717773 MaxFacts=191
 lpg-t-3-5: Seconds=1201.923761844635 MaxFacts=0
 lpg-t-3-6: Seconds=315.78823828697205 MaxFacts=302
+
 optic-3-0: Seconds=4583.191096782684 MaxFacts=30
 optic-3-1: Seconds=4482.3792989254 MaxFacts=30
 optic-3-2: Seconds=4477.9790370464325 MaxFacts=30
+
 ff-eva-0: Seconds=0.006666660308837891 MaxFacts=10
+
 lpg-eva-0: Seconds=0.06279826164245605 MaxFacts=20
 lpg-eva-1: Seconds=0.05482983589172363 MaxFacts=40
 lpg-eva-2: Seconds=0.07552313804626465 MaxFacts=36
@@ -42,6 +52,7 @@ lpg-eva-3: Seconds=0.05956244468688965 MaxFacts=44
 lpg-eva-4: Seconds=0.05295109748840332 MaxFacts=10
 lpg-eva-5: Seconds=0.06621956825256348 MaxFacts=14
 lpg-eva-6: Seconds=0.07187891006469727 MaxFacts=104
+
 lpg-t-eva-0: Seconds=0.05374264717102051 MaxFacts=18
 lpg-t-eva-1: Seconds=0.07692480087280273 MaxFacts=10
 lpg-t-eva-2: Seconds=0.053867340087890625 MaxFacts=10
@@ -49,6 +60,7 @@ lpg-t-eva-3: Seconds=0.05141282081604004 MaxFacts=10
 lpg-t-eva-4: Seconds=0.09862089157104492 MaxFacts=10
 lpg-t-eva-5: Seconds=0.05420064926147461 MaxFacts=10
 lpg-t-eva-6: Seconds=0.09238767623901367 MaxFacts=98
+
 optic-eva-0: Seconds=180.03106260299683 MaxFacts=10
 optic-eva-1: Seconds=180.60554122924805 MaxFacts=10
 optic-eva-2: Seconds=180.63778042793274 MaxFacts=10
