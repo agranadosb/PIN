@@ -3,14 +3,19 @@ PIN project
 
 TODO
 ----
+
 Script para medir tiempos, lpg y optic ejecutar 3 veces el mismo problema, comparar tiempos y pasos en encontrar la solución.
+
 Preparar diapositivas.
-    - Explicar un poco del problema
-    - Tiempos 15 minutos
-        - 1 minutos exlicar problema
-        - 3 minutos exlicar problema específico
-        - Resto explicar hechos y acciones y resultados
-        - 2 minutos preguntas
+
+- Explicar un poco del problema
+- Tiempos 15 minutos
+    - 1 minutos exlicar problema
+    - 3 minutos exlicar problema específico
+    - 3 minutos hechos
+    - 2 minutos acciones
+    - 4 minutos resultados
+    - 2 minutos preguntas
 
 Usage
 -----
