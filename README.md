@@ -10,11 +10,11 @@ Preparar diapositivas.
 
 - Explicar un poco del problema
 - Tiempos 15 minutos
-    - 1 minutos exlicar problema
-    - 3 minutos exlicar problema específico
-    - 3 minutos hechos
-    - 2 minutos acciones
-    - 4 minutos resultados
+    - 1 minutos exlicar problema DANI
+    - 3 minutos exlicar problema específico DANI
+    - 3 minutos hechos DANI - ALEX
+    - 2 minutos acciones - ALEX
+    - 4 minutos resultados - ALEX
     - 2 minutos preguntas
 
 Usage
