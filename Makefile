@@ -1,6 +1,6 @@
 PROBLEM=1
 DOMAIN=domain
-TIMESTEPS=
+TIMESTEPS=-timesteps
 N=1
 
 .DEFAULT_GOAL := ff
@@ -12,6 +12,8 @@ chmod:
 ff:
 	./planners/metric_ff -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl
 lpg:
-	./planners/lpg-td -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt ${TIMESTEPS}
+	./planners/lpg-td -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt
+lpg-t:
+	./planners/lpg-td -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt -timesteps
 optic:
 	./planners/optic-clp src/${DOMAIN}.pddl src/problem${PROBLEM}.pddl

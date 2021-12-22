@@ -36,7 +36,7 @@
 		(conecta_a ?ct - cinta ?m_o - muelle ?m_d - muelle)
 
 		; Este predica se utiliza para controlar la altura maxima de las pilas
-		(next ?cinta1 - altura ?cinta2 - altura)
+		(next ?a1 - altura ?a2 - altura)
 
 		; Indica la altura actual de la pila
 		(altura ?p - pila ?t - altura)

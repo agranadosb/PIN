@@ -1,0 +1,61 @@
+./planners/lpg-td -o src/domain.pddl -f src/problemeva.pddl -n 1 -out results/result-problemeva.txt -timesteps
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/domain.pddl -f src/problemeva.pddl -n 1 -out results/result-problemeva.txt -timesteps   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :      92
+Number of conditional actions :       0
+Number of facts               :      84
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+.. solution found: 
+ first_solution_cpu_time: 0.02 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (COGER-PILA MUELLE2 GRUA2 PILA2 CONTENEDOR2 ALTURA_MUELLE2_1 PILA2 ALTURA_MUELLE2_0) [D:1.00; C:1.00]
+ 1.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR2) [D:1.00; C:1.00]
+ 2.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR2) [D:1.00; C:1.00]
+ 2.0000: (COGER-PILA MUELLE2 GRUA2 PILA1 CONTENEDOR1 ALTURA_MUELLE2_1 PILA1 ALTURA_MUELLE2_0) [D:1.00; C:1.00]
+ 3.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR1) [D:1.00; C:1.00]
+ 3.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA4 CONTENEDOR2 ALTURA_MUELLE1_0 PILA4 ALTURA_MUELLE1_1) [D:1.00; C:1.00]
+ 4.0000: (COGER-PILA MUELLE1 GRUA1 PILA3 CONTENEDOR3 ALTURA_MUELLE1_1 PILA3 ALTURA_MUELLE1_0) [D:1.00; C:1.00]
+ 5.0000: (DEJAR-CINTA CINTA1 MUELLE1 MUELLE2 GRUA1 CONTENEDOR3) [D:1.00; C:1.00]
+ 6.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR1) [D:1.00; C:1.00]
+ 7.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA3 CONTENEDOR1 ALTURA_MUELLE1_0 PILA3 ALTURA_MUELLE1_1) [D:1.00; C:1.00]
+
+
+Solution number: 1
+Total time:      0.02
+Search time:     0.02
+Actions:         10
+Duration:        8.000
+Plan quality:    10.000 
+Total Num Flips: 117
+     Plan file:       results/result-problemeva.txt_1_1.SOL
+
