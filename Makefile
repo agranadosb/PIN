@@ -1,7 +1,9 @@
 PROBLEM=1
-DOMAIN=domain
+EX=1
 TIMESTEPS=-timesteps
 N=1
+
+BASE=src/ex${EX}/
 
 .DEFAULT_GOAL := ff
 
@@ -10,10 +12,10 @@ chmod:
 	chmod +x planners/lpg-td
 	chmod +x planners/optic-clp
 ff:
-	./planners/metric_ff -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl
+	./planners/metric_ff -o ${BASE}domain.pddl -f ${BASE}problem${PROBLEM}.pddl
 lpg:
-	./planners/lpg-td -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt
+	./planners/lpg-td -o ${BASE}domain.pddl -f ${BASE}problem${PROBLEM}.pddl -n ${N} -out ${BASE}results/result-problem${PROBLEM}.txt
 lpg-t:
-	./planners/lpg-td -o src/${DOMAIN}.pddl -f src/problem${PROBLEM}.pddl -n ${N} -out results/result-problem${PROBLEM}.txt -timesteps
+	./planners/lpg-td -o ${BASE}domain.pddl -f ${BASE}problem${PROBLEM}.pddl -n ${N} -out ${BASE}results/result-problem${PROBLEM}.txt -timesteps
 optic:
-	./planners/optic-clp src/${DOMAIN}.pddl src/problem${PROBLEM}.pddl
+	./planners/optic-clp ${BASE}domain.pddl ${BASE}problem${PROBLEM}.pddl
