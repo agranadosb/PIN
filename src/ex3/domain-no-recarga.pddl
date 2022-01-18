@@ -22,6 +22,8 @@
 		(peso ?contenedor - contenedor)
 		(longitud ?cinta - cinta)
 		(velocidad ?cinta - cinta)
+		(gasolina ?cinta - cinta)
+		(total-gasoilina-gastada)
 	)
 
 	(:durative-action coger-pila
@@ -211,6 +213,31 @@
 			and
 			(at start (not (ubicado-en ?contenedor ?muelle_origen)))
 			(at end (ubicado-en ?contenedor ?muelle_destino))
+			(at end (decrease (gasolina ?cinta) (longitud ?cinta)))
+			(at end (increase (total-gasoilina-gastada) (longitud ?cinta)))
+		)
+	)
+
+	(:durative-action mover-cinta-rapido
+		:parameters (
+			?cinta - cinta
+			?muelle_origen - muelle
+			?muelle_destino - muelle
+			?contenedor - contenedor
+		)
+		:duration (= ?duration (/ (longitud ?cinta) (* 2 (velocidad ?cinta))))
+		:condition (
+			and
+			(over all (conecta-a ?cinta ?muelle_origen ?muelle_destino))
+			(at start (ubicado-en ?contenedor ?muelle_origen))
+			(over all (ubicado-en ?contenedor ?cinta))
+		)
+		:effect(
+			and
+			(at start (not (ubicado-en ?contenedor ?muelle_origen)))
+			(at end (ubicado-en ?contenedor ?muelle_destino))
+			(at end (decrease (gasolina ?cinta) (* 2 (longitud ?cinta))))
+			(at end (increase (total-gasoilina-gastada) (* 2 (longitud ?cinta))))
 		)
 	)
 )

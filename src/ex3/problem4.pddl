@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; PUERTO Prob. 4 pero con 2 gruas en muelle 1 de Daniel P. y Alejandro G.
+;;;; PUERTO Prob. 4 de Daniel P. y Alejandro G.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (define (problem problema_simple)
@@ -8,7 +8,6 @@
         grua1 - grua
         grua2 - grua
         grua3 - grua
-        grua4 - grua
 
         pila1 - pila
         pila2 - pila
@@ -75,12 +74,18 @@
 
         (= (longitud cinta1) 5)
         (= (velocidad cinta1) 1)
+        (= (gasolina cinta1) 10)
         (= (longitud cinta2) 5)
         (= (velocidad cinta2) 1)
+        (= (gasolina cinta2) 10)
         (= (longitud cinta3) 5)
         (= (velocidad cinta3) 1)
+        (= (gasolina cinta3) 10)
         (= (longitud cinta4) 5)
         (= (velocidad cinta4) 1)
+        (= (gasolina cinta4) 10)
+
+        (= (total-gasoilina-gastada) 0)
 
         ; Muelle donde se encuentra cada contenedor
         (ubicado-en contenedor1 muelle1)
@@ -153,7 +158,6 @@
 
         ; Gruas en sus muelles
         (ubicado-en grua1 muelle1)
-        (ubicado-en grua4 muelle1)
         (ubicado-en grua2 muelle2)
         (ubicado-en grua3 muelle3)
 
@@ -173,11 +177,9 @@
         (top contenedor12 pila7)
         (top contenedor14 pila8)
 
-        ; Control de alturas
         (= (altura grua1) 5)
         (= (altura grua2) 5)
         (= (altura grua3) 5)
-        (= (altura grua4) 5)
         (= (altura cinta1) 1)
         (= (altura cinta2) 1)
         (= (altura cinta3) 1)
@@ -198,7 +200,6 @@
         (libre grua1)
         (libre grua2)
         (libre grua3)
-        (libre grua4)
         (libre cinta1)
         (libre cinta2)
         (libre cinta3)
@@ -275,7 +276,6 @@
 
     (:goal
         (and
-
             (ubicado-en contenedor9 muelle1)
             (disponible contenedor9)
 
@@ -290,5 +290,5 @@
 
         )
     )
-    (:metric minimize (total-time))
+    (:metric minimize (total-gasoilina-gastada))
 )

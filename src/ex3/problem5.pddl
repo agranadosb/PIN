@@ -75,12 +75,18 @@
 
         (= (longitud cinta1) 5)
         (= (velocidad cinta1) 1)
+        (= (gasolina cinta1) 10)
         (= (longitud cinta2) 5)
         (= (velocidad cinta2) 1)
+        (= (gasolina cinta2) 10)
         (= (longitud cinta3) 5)
         (= (velocidad cinta3) 1)
+        (= (gasolina cinta3) 10)
         (= (longitud cinta4) 5)
         (= (velocidad cinta4) 1)
+        (= (gasolina cinta4) 10)
+
+        (= (total-gasoilina-gastada) 0)
 
         ; Muelle donde se encuentra cada contenedor
         (ubicado-en contenedor1 muelle1)
@@ -290,5 +296,5 @@
 
         )
     )
-    (:metric minimize (total-time))
+    (:metric minimize (total-gasoilina-gastada))
 )
