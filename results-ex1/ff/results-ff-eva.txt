@@ -1,0 +1,47 @@
+./planners/metric_ff -o src/ex1/domain.pddl -f src/ex1/problemeva.pddl
+
+ff: parsing domain file
+domain 'PUERTO' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEMA_SIMPLE' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    6 into depth [1][2]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1][2][3][4][5][6][7][8][9][10][11][12] --- pruning stopped --- [1][2][3][4]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: COGER-PILA MUELLE2 GRUA2 PILA1 CONTENEDOR1 ALTURA_MUELLE2_1 PILA1 ALTURA_MUELLE2_0
+        1: DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR1
+        2: COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR1
+        3: DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA4 CONTENEDOR1 ALTURA_MUELLE1_0 PILA4 ALTURA_MUELLE1_1
+        4: COGER-PILA MUELLE2 GRUA2 PILA2 CONTENEDOR2 ALTURA_MUELLE2_1 PILA2 ALTURA_MUELLE2_0
+        5: COGER-PILA MUELLE1 GRUA1 PILA3 CONTENEDOR3 ALTURA_MUELLE1_1 PILA3 ALTURA_MUELLE1_0
+        6: DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR2
+        7: DEJAR-CINTA CINTA1 MUELLE1 MUELLE2 GRUA1 CONTENEDOR3
+        8: COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR2
+        9: DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA3 CONTENEDOR2 ALTURA_MUELLE1_0 PILA3 ALTURA_MUELLE1_1
+     
+
+time spent:    0.00 seconds instantiating 1824 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 94 facts and 92 actions
+               0.00 seconds creating final representation with 84 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 73 states, to a max depth of 12
+               0.00 seconds total time
+
