@@ -15,8 +15,8 @@ chmod:
 ff:
 	./planners/metric_ff -o ${BASE}${DOMAIN}.pddl -f ${BASE}problem${PROBLEM}.pddl
 lpg:
-	./planners/lpg-td -o ${BASE}${DOMAIN}.pddl -f ${BASE}problem${PROBLEM}.pddl -n ${N} -out ${BASE}results/result-problem${PROBLEM}.txt
+	./planners/lpg-td -o ${BASE}${DOMAIN}.pddl -f ${BASE}problem${PROBLEM}.pddl -n ${N} -out ${BASE}results/${DOMAIN}-result-problem${PROBLEM}.txt
 lpg-t:
-	./planners/lpg-td -o ${BASE}${DOMAIN}.pddl -f ${BASE}problem${PROBLEM}.pddl -n ${N} -out ${BASE}results/result-problem${PROBLEM}.txt -timesteps
+	./planners/lpg-td -o ${BASE}${DOMAIN}.pddl -f ${BASE}problem${PROBLEM}.pddl -n ${N} -out ${BASE}results/${DOMAIN}-result-problem${PROBLEM}-t.txt -timesteps
 optic:
 	./planners/optic-clp ${BASE}${DOMAIN}.pddl ${BASE}problem${PROBLEM}.pddl
