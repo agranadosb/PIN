@@ -1,0 +1,67 @@
+./planners/metric_ff -o src/ex1/domain.pddl -f src/ex1/problem3.pddl
+
+ff: parsing domain file
+domain 'PUERTO' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEMA_SIMPLE' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   14 into depth [1][2]
+                                  13            [1][2]
+                                  12            [1][2]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1][2]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1][2]
+                                   4            [1][2]
+                                   3            [1][2]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: COGER-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR7 ALTURA_MUELLE2_2 CONTENEDOR6 ALTURA_MUELLE2_1
+        1: DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR7 ALTURA_MUELLE2_1 CONTENEDOR5 ALTURA_MUELLE2_2
+        2: COGER-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR10 ALTURA_MUELLE2_3 CONTENEDOR9 ALTURA_MUELLE2_2
+        3: DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR10 ALTURA_MUELLE2_2 CONTENEDOR7 ALTURA_MUELLE2_3
+        4: COGER-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR6 ALTURA_MUELLE2_1 PILA5 ALTURA_MUELLE2_0
+        5: DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR6
+        6: COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR6
+        7: DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA3 CONTENEDOR6 ALTURA_MUELLE1_1 CONTENEDOR3 ALTURA_MUELLE1_2
+        8: COGER-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR9 ALTURA_MUELLE2_2 CONTENEDOR8 ALTURA_MUELLE2_1
+        9: DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR9
+       10: COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR9
+       11: DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA2 CONTENEDOR9 ALTURA_MUELLE1_1 CONTENEDOR4 ALTURA_MUELLE1_2
+       12: COGER-PILA MUELLE2 GRUA2 PILA7 CONTENEDOR13 ALTURA_MUELLE2_3 CONTENEDOR12 ALTURA_MUELLE2_2
+       13: DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR13 ALTURA_MUELLE2_0 PILA5 ALTURA_MUELLE2_1
+       14: COGER-PILA MUELLE2 GRUA2 PILA7 CONTENEDOR12 ALTURA_MUELLE2_2 CONTENEDOR11 ALTURA_MUELLE2_1
+       15: DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR12 ALTURA_MUELLE2_1 CONTENEDOR8 ALTURA_MUELLE2_2
+       16: COGER-PILA MUELLE1 GRUA1 PILA1 CONTENEDOR2 ALTURA_MUELLE1_2 CONTENEDOR1 ALTURA_MUELLE1_1
+       17: DEJAR-CINTA CINTA1 MUELLE1 MUELLE2 GRUA1 CONTENEDOR2
+       18: COGER-PILA MUELLE2 GRUA2 PILA7 CONTENEDOR11 ALTURA_MUELLE2_1 PILA7 ALTURA_MUELLE2_0
+       19: DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR11
+       20: COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR11
+       21: DEJAR-VERDE-VERDE MUELLE1 GRUA1 PILA1 CONTENEDOR11 ALTURA_MUELLE1_1 CONTENEDOR1 ALTURA_MUELLE1_2
+     
+
+time spent:    0.00 seconds instantiating 67304 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 556 facts and 5236 actions
+               0.02 seconds creating final representation with 540 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 49 states, to a max depth of 2
+               0.02 seconds total time
+
