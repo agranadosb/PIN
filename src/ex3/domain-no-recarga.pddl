@@ -61,7 +61,7 @@
 			(at start (not (encima ?contenedor ?objeto_base)))
             ; Libre cuando la grúa tenga el contenedor arriba
 			(at end (disponible ?objeto_base))
-            (at end (not (logica-altura ?pila ?altura_pila)))
+            (at start (not (logica-altura ?pila ?altura_pila)))
 			(at end (logica-altura ?pila ?altura_anterior))
             (at end (decrease (altura ?pila) 1))
 		)
@@ -86,7 +86,7 @@
 			(over all (ubicado-en ?objeto_base ?pila))
 			(over all (top ?objeto_base ?pila))
 			(over all (no-verde ?objeto_base))
-            (over all (logica-altura ?pila ?altura_pila))
+            (at start (logica-altura ?pila ?altura_pila))
 			(over all (next ?altura_pila ?altura_posterior))
 		)
 		:effect(
@@ -100,7 +100,7 @@
 			(at end (disponible ?contenedor))
 			(at end (not (disponible ?objeto_base)))
 			(at end (increase (altura ?pila) 1))
-            (at end (not (logica-altura ?pila ?altura_pila)))
+            (at start (not (logica-altura ?pila ?altura_pila)))
 			(at end (logica-altura ?pila ?altura_posterior))
 		)
 	)
@@ -125,7 +125,7 @@
 			(over all (top ?contenedor_pila ?pila))
 			(over all (verde ?contenedor_grua))
 			(over all (verde ?contenedor_pila))
-            (over all (logica-altura ?pila ?altura_pila))
+            (at start (logica-altura ?pila ?altura_pila))
 			(over all (next ?altura_pila ?altura_posterior))
 		)
 		:effect(
@@ -138,7 +138,7 @@
 			(at end (not (top ?contenedor_pila ?pila)))
 			(at end (increase (altura ?pila) 1))
 			(at end (disponible ?contenedor_grua))
-            (at end (not (logica-altura ?pila ?altura_pila)))
+            (at start (not (logica-altura ?pila ?altura_pila)))
 			(at end (logica-altura ?pila ?altura_posterior))
 		)
 	)
@@ -180,7 +180,7 @@
 		:duration (= ?duration (* (peso ?contenedor) (- (altura ?grua) (altura ?cinta))))
 		:condition(
 			and
-			(at start (libre ?cinta))
+			(over all (libre ?cinta))
 			(over all (conecta-a ?cinta ?muelle_origen ?muelle_destino))
 			(over all (ubicado-en ?grua ?muelle_origen))
 			(over all (ubicado-en ?contenedor ?grua))
@@ -191,7 +191,7 @@
 			(at end (libre ?grua))
 			(at end (not (ubicado-en ?contenedor ?grua)))
 			(at end (ubicado-en ?contenedor ?cinta))
-			(at start (not (libre ?cinta)))
+			(at end (not (libre ?cinta)))
 		)
 	)
 

@@ -135,10 +135,10 @@
     (ubicado-en grua3 muelle3)
 
     ; Conexion carriles de cinta
-    (conecta_a cinta1 muelle1 muelle2)
-    (conecta_a cinta2 muelle2 muelle1)
-    (conecta_a cinta3 muelle1 muelle3)
-    (conecta_a cinta4 muelle3 muelle1)
+    (conecta-a cinta1 muelle1 muelle2)
+    (conecta-a cinta2 muelle2 muelle1)
+    (conecta-a cinta3 muelle1 muelle3)
+    (conecta-a cinta4 muelle3 muelle1)
 
     ; Tops de las pilas
     (top contenedor1 pila1)
