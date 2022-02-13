@@ -1,7 +1,3 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; PUERTO Ejercicio 1 de Daniel P. y Alejandro G.
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 (define (domain puerto)
 	(:requirements :strips :typing :fluents :durative-actions)
 	(:types cinta muelle grua pila altura contenedor log_altura - object)
