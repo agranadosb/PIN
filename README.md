@@ -34,6 +34,10 @@ And other 6 problems more:
 
 The problems without -t in ex3 have as metric the resource defined and with -t the total time.
 
+The plan results of LPG for each domain for each exercise is stored in `sr/ex_/results` folder.
+
+The execution results of each domain for each exercise is stored in `results/ex_`. The naming of these files is `results-planner-problem.txt`.
+
 Usage
 -----
 
