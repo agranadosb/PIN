@@ -97,8 +97,8 @@
     (ubicado-en grua2 muelle2)
 
     ; Conexion carriles de cinta
-    (conecta_a cinta1 muelle1 muelle2)
-    (conecta_a cinta2 muelle2 muelle1)
+    (conecta-a cinta1 muelle1 muelle2)
+    (conecta-a cinta2 muelle2 muelle1)
 
     ; Tops de las pilas
     (top contenedor1 pila1)
@@ -140,11 +140,9 @@
     (disponible contenedor8)
 
     ; Contenedores verdes
-    
     (verde contenedor4)
     (verde contenedor5)
     (verde contenedor9)
-    (verde contenedor8)
 
     ; Contenedores no verdes
     (no-verde contenedor1)
@@ -152,6 +150,7 @@
     (no-verde contenedor3)
     (no-verde contenedor6)
     (no-verde contenedor7)
+    (no-verde contenedor8)
 
     ; Hay que marcar que las pilas son no verdes
     (no-verde pila1)

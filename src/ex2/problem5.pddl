@@ -42,6 +42,19 @@
         contenedor12 - contenedor
         contenedor13 - contenedor
         contenedor14 - contenedor
+
+        altura_muelle1_0 - log_altura
+        altura_muelle1_1 - log_altura
+        altura_muelle1_2 - log_altura
+
+        altura_muelle2_0 - log_altura
+        altura_muelle2_1 - log_altura
+        altura_muelle2_2 - log_altura
+        altura_muelle2_3 - log_altura
+
+        altura_muelle3_0 - log_altura
+        altura_muelle3_1 - log_altura
+        altura_muelle3_2 - log_altura
     )
 
     (:init
@@ -59,6 +72,15 @@
         (= (peso contenedor12) 1)
         (= (peso contenedor13) 1)
         (= (peso contenedor14) 1)
+
+        (= (longitud cinta1) 5)
+        (= (velocidad cinta1) 1)
+        (= (longitud cinta2) 5)
+        (= (velocidad cinta2) 1)
+        (= (longitud cinta3) 5)
+        (= (velocidad cinta3) 1)
+        (= (longitud cinta4) 5)
+        (= (velocidad cinta4) 1)
 
         ; Muelle donde se encuentra cada contenedor
         (ubicado-en contenedor1 muelle1)
@@ -152,9 +174,6 @@
         (top contenedor14 pila8)
 
         ; Control de alturas
-        (= (altura-maxima muelle1) 2)
-        (= (altura-maxima muelle2) 3)
-        (= (altura-maxima muelle3) 2)
         (= (altura grua1) 5)
         (= (altura grua2) 5)
         (= (altura grua3) 5)
@@ -163,6 +182,17 @@
         (= (altura cinta2) 1)
         (= (altura cinta3) 1)
         (= (altura cinta4) 1)
+
+        ; Control de alturas
+        (next altura_muelle1_0 altura_muelle1_1)
+        (next altura_muelle1_1 altura_muelle1_2)
+
+        (next altura_muelle2_0 altura_muelle2_1)
+        (next altura_muelle2_1 altura_muelle2_2)
+        (next altura_muelle2_2 altura_muelle2_3)
+
+        (next altura_muelle3_0 altura_muelle3_1)
+        (next altura_muelle3_1 altura_muelle3_2)
 
         ; Gruas y carriles de cinta libres
         (libre grua1)
@@ -182,6 +212,16 @@
         (= (altura pila6) 3)
         (= (altura pila7) 2)
         (= (altura pila8) 2)
+
+        ; Altura actual de cada pila contando sus contenedores
+        (logica-altura pila1 altura_muelle1_1)
+        (logica-altura pila2 altura_muelle1_0)
+        (logica-altura pila3 altura_muelle1_1)
+        (logica-altura pila4 altura_muelle2_3)
+        (logica-altura pila5 altura_muelle2_2)
+        (logica-altura pila6 altura_muelle2_3)
+        (logica-altura pila7 altura_muelle3_2)
+        (logica-altura pila8 altura_muelle3_2)
 
         ; Contendores disponibles
         (disponible contenedor1)

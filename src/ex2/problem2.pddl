@@ -31,6 +31,14 @@
         contenedor8 - contenedor
         contenedor9 - contenedor
         contenedor10 - contenedor
+
+        altura_muelle1_0 - log_altura
+        altura_muelle1_1 - log_altura
+
+        altura_muelle2_0 - log_altura
+        altura_muelle2_1 - log_altura
+        altura_muelle2_2 - log_altura
+        altura_muelle2_3 - log_altura
     )
 
     (:init
@@ -44,6 +52,11 @@
         (= (peso contenedor8) 1)
         (= (peso contenedor9) 1)
         (= (peso contenedor10) 1)
+
+        (= (longitud cinta1) 5)
+        (= (velocidad cinta1) 1)
+        (= (longitud cinta2) 5)
+        (= (velocidad cinta2) 1)
 
         ; Muelle donde se encuentra cada contenedor
         (ubicado-en contenedor1 muelle1)
@@ -110,12 +123,16 @@
         (top contenedor7 pila5)
         (top contenedor10 pila6)
 
-        (= (altura-maxima muelle1) 1)
-        (= (altura-maxima muelle2) 3)
         (= (altura grua1) 5)
         (= (altura grua2) 5)
         (= (altura cinta1) 1)
         (= (altura cinta2) 1)
+        ; Control de alturas
+        (next altura_muelle1_0 altura_muelle1_1)
+
+        (next altura_muelle2_0 altura_muelle2_1)
+        (next altura_muelle2_1 altura_muelle2_2)
+        (next altura_muelle2_2 altura_muelle2_3)
 
         ; Gruas y carriles de cinta libres
         (libre grua1)
@@ -130,6 +147,14 @@
         (= (altura pila5) 2)
         (= (altura pila6) 3)
 
+        ; Altura actual de cada pila contando sus contenedores
+        (logica-altura pila1 altura_muelle1_1)
+        (logica-altura pila2 altura_muelle1_0)
+        (logica-altura pila3 altura_muelle1_1)
+        (logica-altura pila4 altura_muelle2_3)
+        (logica-altura pila5 altura_muelle2_2)
+        (logica-altura pila6 altura_muelle2_3)
+
         ; Contendores disponibles
         (disponible contenedor1)
         (disponible contenedor3)
@@ -141,11 +166,9 @@
         (disponible contenedor8)
 
         ; Contenedores verdes
-
         (verde contenedor4)
         (verde contenedor5)
         (verde contenedor9)
-        (verde contenedor8)
 
         ; Contenedores no verdes
         (no-verde contenedor1)
@@ -153,6 +176,7 @@
         (no-verde contenedor3)
         (no-verde contenedor6)
         (no-verde contenedor7)
+        (no-verde contenedor8)
 
         ; Hay que marcar que las pilas son no verdes
         (no-verde pila1)

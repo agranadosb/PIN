@@ -1,0 +1,43 @@
+./planners/optic-clp src/ex2/domain.pddl src/ex2/problemeva.pddl
+Number of literals: 100
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+(altura grua1) has finite bounds: [3.000,3.000]
+(altura grua2) has finite bounds: [3.000,3.000]
+(altura cinta1) has finite bounds: [1.000,1.000]
+(altura cinta2) has finite bounds: [1.000,1.000]
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+[01;34mFor limits: literal goal index 0, fact (ubicado-en contenedor1 muelle1), is static or a precondition[00m
+[01;34mFor limits: literal goal index 1, fact (ubicado-en contenedor2 muelle1), is static or a precondition[00m
+[01;34mFor limits: literal goal index 2, fact (disponible contenedor1), is static or a precondition[00m
+[01;34mFor limits: literal goal index 3, fact (disponible contenedor2), is static or a precondition[00m
+12% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 8.000, admissible cost estimate 5.005
+b (6.000 | 11.000)b (5.000 | 14.000)b (4.000 | 14.001)
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (7.000 | 9.000)b (6.000 | 11.000)b (5.000 | 14.000)b (4.000 | 14.001)b (3.000 | 18.000)b (2.000 | 20.000)b (1.000 | 23.001)(G)
+; LP calculated the cost
+
+; Plan found with metric 23.001
+; Theoretical reachable cost 23.002
+; States evaluated so far: 153
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.40
+0.000: (coger-pila muelle2 grua2 pila1 contenedor1 pila1 altura_muelle2_1 altura_muelle2_0)  [2.000]
+0.000: (coger-pila muelle1 grua1 pila3 contenedor3 pila3 altura_muelle1_1 altura_muelle1_0)  [2.000]
+2.000: (dejar-cinta cinta1 muelle1 muelle2 grua1 contenedor3)  [2.000]
+2.000: (dejar-cinta cinta2 muelle2 muelle1 grua2 contenedor1)  [2.000]
+4.000: (mover-cinta cinta2 muelle2 muelle1 contenedor1)  [5.000]
+4.001: (coger-pila muelle2 grua2 pila2 contenedor2 pila2 altura_muelle2_1 altura_muelle2_0)  [2.000]
+9.000: (coger-cinta cinta2 muelle2 muelle1 grua1 contenedor1)  [2.000]
+11.000: (dejar-cinta cinta2 muelle2 muelle1 grua2 contenedor2)  [2.000]
+11.001: (dejar-blanco-pila muelle1 grua1 pila4 contenedor1 pila4 altura_muelle1_0 altura_muelle1_1)  [3.000]
+13.000: (mover-cinta cinta2 muelle2 muelle1 contenedor2)  [5.000]
+18.000: (coger-cinta cinta2 muelle2 muelle1 grua1 contenedor2)  [2.000]
+20.001: (dejar-blanco-pila muelle1 grua1 pila3 contenedor2 pila3 altura_muelle1_0 altura_muelle1_1)  [3.000]
+
+ * All goal deadlines now no later than 23.001

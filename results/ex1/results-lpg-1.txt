@@ -1,0 +1,175 @@
+./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem1.pddl -n 3 -out src/ex1/results/domain-result-problem1.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem1.pddl -n 3 -out src/ex1/results/domain-result-problem1.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    3968
+Number of conditional actions :       0
+Number of facts               :     414
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.16 seconds
+
+Searching ('.' = every 50 search steps):
+........ solution found: 
+ first_solution_cpu_time: 1.00 
+Solution number: 1
+Total time:      1.00
+Search time:     0.84
+Actions:         130
+Duration:        128.000
+Plan quality:    130.000 
+Total Num Flips: 396
+     Plan file:       src/ex1/results/domain-result-problem1.txt_1_1.SOL Restart using stored plan
+ solution found: 
+Solution number: 2
+Total time:      1.33
+Search time:     1.17
+Actions:         12
+Duration:        10.000
+Plan quality:    12.000 
+Total Num Flips: 419
+     Plan file:       src/ex1/results/domain-result-problem1.txt_2_1.SOL Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.. found solution of bad quality.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........ found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+......... found solution of bad quality. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.......... found solution of bad quality. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.. found solution of bad quality.
+
+Searching ('.' = every 50 search steps):
+.......... found solution of bad quality. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.......... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.... found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+.......... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+...........
+
+Max time exceeded for LocalSearch
+
+
+
+Time: 1.170000
+
+
+
+Switching to Best-first Search: ( code from J. Hoffmann's package FF-v2.3 ) 
+
+advancing to distance :    8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+improving the parallelism of the plan found solution of bad quality.
+

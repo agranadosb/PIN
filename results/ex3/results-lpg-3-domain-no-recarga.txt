@@ -1,0 +1,54 @@
+./planners/lpg-td -o src/ex3/domain-no-recarga.pddl -f src/ex3/problem3.pddl -n 3 -out src/ex3/results/domain-no-recarga-result-problem3.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex3/domain-no-recarga.pddl -f src/ex3/problem3.pddl -n 3 -out src/ex3/results/domain-no-recarga-result-problem3.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    5288
+Number of conditional actions :       0
+Number of facts               :     540
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+ search limit exceeded. Restart using null plan
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 631.70 
+Solution number: 1
+Total time:      631.70
+Search time:     631.32
+Actions:         75
+Duration:        227.000
+Plan quality:    20.000 
+Total Num Flips: 5539
+     Plan file:       src/ex3/results/domain-no-recarga-result-problem3.txt_1_1.SOL Restart using stored plan
+
+ solution found: 
+ Recompute start times
+
+Solution number: 2
+Total time:      632.57
+Search time:     632.19
+Actions:         25
+Duration:        67.000
+Plan quality:    15.000 
+Total Num Flips: 5567
+     Plan file:       src/ex3/results/domain-no-recarga-result-problem3.txt_2_1.SOL Restart using stored plan

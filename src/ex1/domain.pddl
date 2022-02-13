@@ -33,7 +33,7 @@
 		(top ?x - (either pila contenedor) ?pila2 - pila)
 
 		; La cinta conecta muelle origen con muelle destino
-		(conecta_a ?ct - cinta ?m_o - muelle ?m_d - muelle)
+		(conecta-a ?ct - cinta ?m_o - muelle ?m_d - muelle)
 
 		; Este predica se utiliza para controlar la altura maxima de las pilas
 		(next ?a1 - altura ?a2 - altura)
@@ -165,7 +165,7 @@
 			and
 			(libre ?grua)
 			(ubicado-en ?grua ?muelle_destino)
-			(conecta_a ?cinta ?muelle_origen ?muelle_destino)
+			(conecta-a ?cinta ?muelle_origen ?muelle_destino)
 			(ubicado-en ?contenedor ?cinta)
 		)
 		:effect(
@@ -189,7 +189,7 @@
 		:precondition(
 			and
 			(libre ?cinta)
-			(conecta_a ?cinta ?muelle_origen ?muelle_destino)
+			(conecta-a ?cinta ?muelle_origen ?muelle_destino)
 			(ubicado-en ?grua ?muelle_origen)
 			(ubicado-en ?contenedor ?grua)
 			(ubicado-en ?contenedor ?muelle_origen)

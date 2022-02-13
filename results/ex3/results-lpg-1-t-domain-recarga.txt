@@ -1,0 +1,95 @@
+./planners/lpg-td -o src/ex3/domain-recarga.pddl -f src/ex3/problem1-t.pddl -n 3 -out src/ex3/results/domain-recarga-result-problem1-t.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex3/domain-recarga.pddl -f src/ex3/problem1-t.pddl -n 3 -out src/ex3/results/domain-recarga-result-problem1-t.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    4034
+Number of conditional actions :       0
+Number of facts               :     415
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.23 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.60 
+Solution number: 1
+Total time:      0.60
+Search time:     0.37
+Actions:         18
+Duration:        55.000
+Plan quality:    55.000 
+Total Num Flips: 41
+     Plan file:       src/ex3/results/domain-recarga-result-problem1-t.txt_1_1.SOL Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+ solution found: 
+ Recompute start times
+
+Solution number: 2
+Total time:      15.25
+Search time:     15.02
+Actions:         14
+Duration:        51.500
+Plan quality:    51.500 
+Total Num Flips: 649
+     Plan file:       src/ex3/results/domain-recarga-result-problem1-t.txt_2_1.SOL Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+. solution found: 
+ Recompute start times
+
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR8 CONTENEDOR4 ALTURA2 ALTURA1) [D:4.00; C:0.10]
+ 4.0000: (DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR8 CONTENEDOR6 ALTURA1 ALTURA2) [D:5.00; C:0.10]
+ 9.0000: (COGER-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR2 CONTENEDOR3 ALTURA3 ALTURA2) [D:3.00; C:0.10]
+ 12.0000: (DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR2 CONTENEDOR8 ALTURA2 ALTURA3) [D:4.00; C:0.10]
+ 16.0000: (COGER-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR3 CONTENEDOR5 ALTURA2 ALTURA1) [D:4.00; C:0.10]
+ 20.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR3) [D:5.00; C:0.10]
+ 25.0000: (MOVER-CINTA-RAPIDO CINTA2 MUELLE2 MUELLE1 CONTENEDOR3) [D:2.50; C:0.10]
+ 25.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR4 PILA4 ALTURA1 ALTURA0) [D:5.00; C:0.10]
+ 27.5000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR3) [D:5.00; C:0.10]
+ 27.5000: (RECARGAR-CINTA CINTA2 MUELLE2 MUELLE1 CONTENEDOR1) [D:5.00; C:0.10]
+ 32.5000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR4) [D:5.00; C:0.10]
+ 32.5000: (DEJAR-VERDE-VERDE MUELLE1 GRUA1 PILA1 CONTENEDOR3 CONTENEDOR7 ALTURA2 ALTURA3) [D:4.00; C:0.10]
+ 37.5000: (MOVER-CINTA-RAPIDO CINTA2 MUELLE2 MUELLE1 CONTENEDOR4) [D:2.50; C:0.10]
+ 40.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR4) [D:5.00; C:0.10]
+ 45.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA2 CONTENEDOR4 CONTENEDOR10 ALTURA2 ALTURA3) [D:4.00; C:0.10]
+
+
+
+METRIC_VALUE = 49.00
+Solution number: 3
+Total time:      61.10
+Search time:     60.87
+Actions:         15
+Duration:        49.000
+Plan quality:    49.000 
+Total Num Flips: 1779
+     Plan file:       src/ex3/results/domain-recarga-result-problem1-t.txt_3_1.SOL
+

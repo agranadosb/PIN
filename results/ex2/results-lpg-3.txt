@@ -1,0 +1,92 @@
+./planners/lpg-td -o src/ex2/domain.pddl -f src/ex2/problem3.pddl -n 3 -out src/ex2/results/domain-result-problem3.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex2/domain.pddl -f src/ex2/problem3.pddl -n 3 -out src/ex2/results/domain-result-problem3.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    5262
+Number of conditional actions :       0
+Number of facts               :     540
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.39 seconds
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using null plan
+............... search limit exceeded. Restart using null plan
+.................. search limit exceeded. Restart using null plan
+..................... search limit exceeded. Restart using null plan
+........................ search limit exceeded. Restart using null plan
+............................ search limit exceeded. Restart using null plan
+................................. search limit exceeded. Restart using null plan
+...................................... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using null plan
+..............
+
+Max time exceeded for LocalSearch
+
+
+
+Time: 0.000000
+
+
+
+Switching to Best-first Search: ( code from J. Hoffmann's package FF-v2.3 ) 
+
+advancing to distance :   14
+                          13
+                          12
+                          11
+                          10
+                           9
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+improving the parallelism of the plan
+ Recompute start times
+
+ first_solution_cpu_time: 1201.27 
+ Recompute start times
+
+ first_solution_cpu_time: 1201.27 
+
+Solution number: 1
+Total time:      1201.27
+Search time:     1200.88
+Actions:         27
+Execution cost:  2.70
+Duration:        73.000
+Plan quality:    73.000
+     Plan file:       src/ex2/results/domain-result-problem3.txt_1.SOL
+

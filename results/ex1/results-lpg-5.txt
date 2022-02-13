@@ -1,0 +1,94 @@
+./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem5.pddl -n 3 -out src/ex1/results/domain-result-problem5.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem5.pddl -n 3 -out src/ex1/results/domain-result-problem5.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    8743
+Number of conditional actions :       0
+Number of facts               :     714
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.76 seconds
+
+Searching ('.' = every 50 search steps):
+...... solution found: 
+ first_solution_cpu_time: 4.16 
+Solution number: 1
+Total time:      4.16
+Search time:     3.40
+Actions:         104
+Duration:        90.000
+Plan quality:    104.000 
+Total Num Flips: 316
+     Plan file:       src/ex1/results/domain-result-problem5.txt_1_1.SOL Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+....... found solution of bad quality. Restart using null plan
+ solution found: 
+Solution number: 2
+Total time:      34.74
+Search time:     33.98
+Actions:         24
+Duration:        16.000
+Plan quality:    24.000 
+Total Num Flips: 1276
+     Plan file:       src/ex1/results/domain-result-problem5.txt_2_1.SOL Restart using stored plan
+ solution found: 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR2 ALTURA_MUELLE2_3 CONTENEDOR5 ALTURA_MUELLE2_2) [D:1.00; C:1.00]
+ 0.0000: (COGER-PILA MUELLE3 GRUA3 PILA8 CONTENEDOR14 ALTURA_MUELLE3_2 CONTENEDOR13 ALTURA_MUELLE3_1) [D:1.00; C:1.00]
+ 1.0000: (DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR2 ALTURA_MUELLE2_2 CONTENEDOR7 ALTURA_MUELLE2_3) [D:1.00; C:1.00]
+ 1.0000: (DEJAR-CINTA CINTA4 MUELLE3 MUELLE1 GRUA3 CONTENEDOR14) [D:1.00; C:1.00]
+ 2.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR5 ALTURA_MUELLE2_2 CONTENEDOR4 ALTURA_MUELLE2_1) [D:1.00; C:1.00]
+ 2.0000: (COGER-PILA MUELLE3 GRUA3 PILA8 CONTENEDOR13 ALTURA_MUELLE3_1 PILA8 ALTURA_MUELLE3_0) [D:1.00; C:1.00]
+ 3.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR5) [D:1.00; C:1.00]
+ 4.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR4 ALTURA_MUELLE2_1 PILA4 ALTURA_MUELLE2_0) [D:1.00; C:1.00]
+ 4.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA4 CONTENEDOR5) [D:1.00; C:1.00]
+ 5.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR4) [D:1.00; C:1.00]
+ 5.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA4 PILA3 CONTENEDOR5 ALTURA_MUELLE1_1 CONTENEDOR3 ALTURA_MUELLE1_2) [D:1.00; C:1.00]
+ 6.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR4) [D:1.00; C:1.00]
+ 6.0000: (COGER-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR10 ALTURA_MUELLE2_3 CONTENEDOR9 ALTURA_MUELLE2_2) [D:1.00; C:1.00]
+ 6.0000: (COGER-CINTA CINTA4 MUELLE3 MUELLE1 GRUA4 CONTENEDOR14) [D:1.00; C:1.00]
+ 7.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA1 CONTENEDOR4 ALTURA_MUELLE1_1 CONTENEDOR1 ALTURA_MUELLE1_2) [D:1.00; C:1.00]
+ 7.0000: (DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR10 ALTURA_MUELLE2_0 PILA4 ALTURA_MUELLE2_1) [D:1.00; C:1.00]
+ 7.0000: (DEJAR-CINTA CINTA4 MUELLE3 MUELLE1 GRUA3 CONTENEDOR13) [D:1.00; C:1.00]
+ 8.0000: (COGER-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR9 ALTURA_MUELLE2_2 CONTENEDOR8 ALTURA_MUELLE2_1) [D:1.00; C:1.00]
+ 9.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR9) [D:1.00; C:1.00]
+ 10.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR9) [D:1.00; C:1.00]
+ 11.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA1 PILA2 CONTENEDOR9 ALTURA_MUELLE1_0 PILA2 ALTURA_MUELLE1_1) [D:1.00; C:1.00]
+ 12.0000: (COGER-CINTA CINTA4 MUELLE3 MUELLE1 GRUA1 CONTENEDOR13) [D:1.00; C:1.00]
+ 13.0000: (DEJAR-VERDE-VERDE MUELLE1 GRUA1 PILA2 CONTENEDOR13 ALTURA_MUELLE1_1 CONTENEDOR9 ALTURA_MUELLE1_2) [D:1.00; C:1.00]
+
+
+Solution number: 3
+Total time:      35.28
+Search time:     34.52
+Actions:         23
+Duration:        14.000
+Plan quality:    23.000 
+Total Num Flips: 1296
+     Plan file:       src/ex1/results/domain-result-problem5.txt_3_1.SOL
+

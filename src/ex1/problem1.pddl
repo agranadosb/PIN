@@ -100,8 +100,8 @@
     (ubicado-en grua2 muelle2)
 
     ; Conexion carriles de cinta
-    (conecta_a cinta1 muelle1 muelle2)
-    (conecta_a cinta2 muelle2 muelle1)
+    (conecta-a cinta1 muelle1 muelle2)
+    (conecta-a cinta2 muelle2 muelle1)
 
     ; Tops de las pilas
     (top contenedor7 pila1)
