@@ -1,14 +1,38 @@
 PIN project
 ===========
 
-TODO
-----
+This is the repository for PIN project. In src folder are the 3 exercises of the project:
 
-Script para crear problemas.
+ - ex1 = First exercise
+ - ex2 = Second exercise
+ - ex3 = Third exercise
 
-Implementar numerico.
+Exercises 4 and 5 are in the files `graphplan_v3.xlsx` and `Pop.pdf` respectively.
 
-Implementar temporal (sólo optic y lpg).
+In this project are 6 problems in exercises 1, 2 and 3:
+
+ - 1
+ - 2
+ - 3
+ - 4
+ - 5
+ - eva
+
+In exercise three are 2 domains:
+
+ - domain-no-recarga.pddl
+ - domain-recarga.pddl
+
+And other 6 problems more:
+
+ - 1-t
+ - 2-t
+ - 3-t
+ - 4-t
+ - 5-t
+ - eva-t
+
+The problems without -t in ex3 have as metric the resource defined and with -t the total time.
 
 Usage
 -----
@@ -16,7 +40,7 @@ Usage
 The excutions are made using Makefile, so to execute one planner:
 
 ```sh
-make [planner] [PROBLEM] [options]
+make [planner] [PROBLEM] [options] [domain] [exercise]
 ```
 The planner can be:
 
@@ -31,10 +55,10 @@ For the lpg planner, two options can be setted:
  - `N=x` for n option of the lpg planner
  - `TIMESTEPS=[-timesteps]` for timesteps option
 
-For example, if we want to execute lpg planner with n=1, with timesteps on the problem 3:
+For example, if we want to execute lpg planner with n=1, with timesteps on the problem 3 in exercise 1 with the domain "domain":
 
 ```sh
-make lpg PROBLEM=3 N=1 TIMESTEPS=-timesteps
+make lpg PROBLEM=3 N=1 TIMESTEPS=-timesteps EX=1 DOMAIN=domain
 ```
 
 To give execution permissions, use:
