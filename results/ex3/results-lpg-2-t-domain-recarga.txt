@@ -1,0 +1,125 @@
+./planners/lpg-td -o src/ex3/domain-recarga.pddl -f src/ex3/problem2-t.pddl -n 3 -out src/ex3/results/domain-recarga-result-problem2-t.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex3/domain-recarga.pddl -f src/ex3/problem2-t.pddl -n 3 -out src/ex3/results/domain-recarga-result-problem2-t.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    2020
+Number of conditional actions :       0
+Number of facts               :     356
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.09 seconds
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using null plan
+............... search limit exceeded. Restart using null plan
+.................. search limit exceeded. Restart using null plan
+. solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 66.79 
+Solution number: 1
+Total time:      66.79
+Search time:     66.70
+Actions:         34
+Duration:        84.000
+Plan quality:    84.000 
+Total Num Flips: 2992
+     Plan file:       src/ex3/results/domain-recarga-result-problem2-t.txt_1_1.SOL Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+.................. search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+.......... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+ solution found: 
+ Recompute start times
+
+Solution number: 2
+Total time:      493.87
+Search time:     493.78
+Actions:         35
+Duration:        81.500
+Plan quality:    81.500 
+Total Num Flips: 17394
+     Plan file:       src/ex3/results/domain-recarga-result-problem2-t.txt_2_1.SOL Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+.................. search limit exceeded. Restart using null plan
+..................... search limit exceeded. Restart using stored plan
+........................ search limit exceeded. Restart using stored plan
+............................ search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using null plan
+.................. search limit exceeded. Restart using stored plan
+..................... search limit exceeded. Restart using stored plan
+........................ search limit exceeded. Restart using null plan
+.........................
+
+Max time exceeded.
+
+
+
+Time: 1803.109985
+

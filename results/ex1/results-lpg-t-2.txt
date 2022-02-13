@@ -1,0 +1,132 @@
+./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem2.pddl -n 3 -out src/ex1/results/domain-result-problem2-t.txt -timesteps
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem2.pddl -n 3 -out src/ex1/results/domain-result-problem2-t.txt -timesteps   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    1960
+Number of conditional actions :       0
+Number of facts               :     355
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.06 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+ first_solution_cpu_time: 0.13 
+Solution number: 1
+Total time:      0.13
+Search time:     0.07
+Actions:         21
+Duration:        14.000
+Plan quality:    21.000 
+Total Num Flips: 36
+     Plan file:       src/ex1/results/domain-result-problem2-t.txt_1_1.SOL Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+.................. search limit exceeded. Restart using null plan
+..................... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using null plan
+.................. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+.......... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+.................. search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using null plan
+.................. search limit exceeded. Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+.... found solution of bad quality. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using null plan
+.................. search limit exceeded. Restart using stored plan
+..................... search limit exceeded. Restart using stored plan
+........................ search limit exceeded. Restart using null plan
+............................ search limit exceeded. Restart using stored plan
+.......
+
+Max time exceeded for LocalSearch
+
+
+
+Time: 0.070000
+
+
+
+Switching to Best-first Search: ( code from J. Hoffmann's package FF-v2.3 ) 
+
+advancing to distance :   11
+                          10
+                           9
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+improving the parallelism of the plan found solution of bad quality.
+

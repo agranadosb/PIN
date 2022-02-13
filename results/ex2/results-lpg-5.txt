@@ -1,0 +1,108 @@
+./planners/lpg-td -o src/ex2/domain.pddl -f src/ex2/problem5.pddl -n 3 -out src/ex2/results/domain-result-problem5.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex2/domain.pddl -f src/ex2/problem5.pddl -n 3 -out src/ex2/results/domain-result-problem5.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    8799
+Number of conditional actions :       0
+Number of facts               :     714
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 1.26 seconds
+
+Searching ('.' = every 50 search steps):
+.... solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 5.87 
+Solution number: 1
+Total time:      5.87
+Search time:     4.61
+Actions:         67
+Duration:        171.000
+Plan quality:    171.000 
+Total Num Flips: 210
+     Plan file:       src/ex2/results/domain-result-problem5.txt_1_1.SOL Restart using stored plan
+. solution found: 
+ Recompute start times
+
+Solution number: 2
+Total time:      8.52
+Search time:     7.26
+Actions:         37
+Duration:        75.000
+Plan quality:    75.000 
+Total Num Flips: 264
+     Plan file:       src/ex2/results/domain-result-problem5.txt_2_1.SOL Restart using stored plan
+ solution found: 
+ Recompute start times
+
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (COGER-PILA MUELLE3 GRUA3 PILA8 CONTENEDOR14 CONTENEDOR13 ALTURA_MUELLE3_2 ALTURA_MUELLE3_1) [D:3.00; C:0.10]
+ 0.0000: (COGER-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR10 CONTENEDOR9 ALTURA_MUELLE2_3 ALTURA_MUELLE2_2) [D:2.00; C:0.10]
+ 2.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR10) [D:4.00; C:0.10]
+ 3.0000: (DEJAR-CINTA CINTA4 MUELLE3 MUELLE1 GRUA3 CONTENEDOR14) [D:4.00; C:0.10]
+ 6.0000: (MOVER-CINTA CINTA2 MUELLE2 MUELLE1 CONTENEDOR10) [D:5.00; C:0.10]
+ 6.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR2 CONTENEDOR5 ALTURA_MUELLE2_3 ALTURA_MUELLE2_2) [D:2.00; C:0.10]
+ 7.0000: (COGER-PILA MUELLE3 GRUA3 PILA8 CONTENEDOR13 PILA8 ALTURA_MUELLE3_1 ALTURA_MUELLE3_0) [D:4.00; C:0.10]
+ 7.0000: (MOVER-CINTA CINTA4 MUELLE3 MUELLE1 CONTENEDOR14) [D:5.00; C:0.10]
+ 8.0000: (DEJAR-BLANCO-PILA MUELLE2 GRUA2 PILA5 CONTENEDOR2 CONTENEDOR7 ALTURA_MUELLE2_2 ALTURA_MUELLE2_3) [D:3.00; C:0.10]
+ 11.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA1 CONTENEDOR10) [D:4.00; C:0.10]
+ 11.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR5 CONTENEDOR4 ALTURA_MUELLE2_2 ALTURA_MUELLE2_1) [D:3.00; C:0.10]
+ 15.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR5) [D:4.00; C:0.10]
+ 15.0000: (DEJAR-CINTA CINTA1 MUELLE1 MUELLE2 GRUA1 CONTENEDOR10) [D:4.00; C:0.10]
+ 19.0000: (MOVER-CINTA CINTA2 MUELLE2 MUELLE1 CONTENEDOR5) [D:5.00; C:0.10]
+ 19.0000: (COGER-CINTA CINTA4 MUELLE3 MUELLE1 GRUA1 CONTENEDOR14) [D:4.00; C:0.10]
+ 19.0000: (COGER-PILA MUELLE2 GRUA2 PILA6 CONTENEDOR9 CONTENEDOR8 ALTURA_MUELLE2_2 ALTURA_MUELLE2_1) [D:3.00; C:0.10]
+ 23.0000: (DEJAR-CINTA CINTA4 MUELLE3 MUELLE1 GRUA3 CONTENEDOR13) [D:4.00; C:0.10]
+ 24.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA4 CONTENEDOR5) [D:4.00; C:0.10]
+ 27.0000: (MOVER-CINTA CINTA4 MUELLE3 MUELLE1 CONTENEDOR13) [D:5.00; C:0.10]
+ 28.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR9) [D:4.00; C:0.10]
+ 28.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA4 PILA3 CONTENEDOR5 CONTENEDOR3 ALTURA_MUELLE1_1 ALTURA_MUELLE1_2) [D:4.00; C:0.10]
+ 32.0000: (MOVER-CINTA CINTA2 MUELLE2 MUELLE1 CONTENEDOR9) [D:5.00; C:0.10]
+ 32.0000: (COGER-PILA MUELLE2 GRUA2 PILA4 CONTENEDOR4 PILA4 ALTURA_MUELLE2_1 ALTURA_MUELLE2_0) [D:4.00; C:0.10]
+ 37.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA4 CONTENEDOR9) [D:4.00; C:0.10]
+ 41.0000: (DEJAR-CINTA CINTA2 MUELLE2 MUELLE1 GRUA2 CONTENEDOR4) [D:4.00; C:0.10]
+ 41.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA4 PILA1 CONTENEDOR9 CONTENEDOR1 ALTURA_MUELLE1_1 ALTURA_MUELLE1_2) [D:4.00; C:0.10]
+ 45.0000: (MOVER-CINTA CINTA2 MUELLE2 MUELLE1 CONTENEDOR4) [D:5.00; C:0.10]
+ 50.0000: (COGER-CINTA CINTA2 MUELLE2 MUELLE1 GRUA4 CONTENEDOR4) [D:4.00; C:0.10]
+ 54.0000: (DEJAR-BLANCO-PILA MUELLE1 GRUA4 PILA2 CONTENEDOR4 PILA2 ALTURA_MUELLE1_0 ALTURA_MUELLE1_1) [D:5.00; C:0.10]
+ 59.0000: (COGER-CINTA CINTA4 MUELLE3 MUELLE1 GRUA4 CONTENEDOR13) [D:4.00; C:0.10]
+ 63.0000: (DEJAR-VERDE-VERDE MUELLE1 GRUA4 PILA2 CONTENEDOR13 CONTENEDOR4 ALTURA_MUELLE1_1 ALTURA_MUELLE1_2) [D:4.00; C:0.10]
+
+
+
+METRIC_VALUE = 67.00
+Solution number: 3
+Total time:      9.67
+Search time:     8.41
+Actions:         31
+Duration:        67.000
+Plan quality:    67.000 
+Total Num Flips: 292
+     Plan file:       src/ex2/results/domain-result-problem5.txt_3_1.SOL
+

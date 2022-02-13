@@ -1,0 +1,99 @@
+./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem5.pddl -n 3 -out src/ex1/results/domain-result-problem5-t.txt -timesteps
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex1/domain.pddl -f src/ex1/problem5.pddl -n 3 -out src/ex1/results/domain-result-problem5-t.txt -timesteps   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    8743
+Number of conditional actions :       0
+Number of facts               :     714
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.77 seconds
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+ solution found: 
+ first_solution_cpu_time: 9.56 
+Solution number: 1
+Total time:      9.56
+Search time:     8.79
+Actions:         27
+Duration:        16.000
+Plan quality:    27.000 
+Total Num Flips: 619
+     Plan file:       src/ex1/results/domain-result-problem5-t.txt_1_1.SOL Restart using stored plan
+.......... search limit exceeded. Restart using null plan
+...... solution found: 
+Solution number: 2
+Total time:      34.37
+Search time:     33.60
+Actions:         25
+Duration:        16.000
+Plan quality:    25.000 
+Total Num Flips: 1445
+     Plan file:       src/ex1/results/domain-result-problem5-t.txt_2_1.SOL Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+... found solution of bad quality. Restart using stored plan
+........
+
+Max time exceeded for LocalSearch
+
+
+
+Time: 33.599998
+
+
+
+Switching to Best-first Search: ( code from J. Hoffmann's package FF-v2.3 ) 
+
+advancing to distance :   15
+                          14
+                          13
+                          12
+                          11
+                          10
+                           9
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+improving the parallelism of the plan
+
+Solution number: 3
+Total time:      1209.75
+Search time:     1208.98
+Actions:         23
+Execution cost:  23.00
+Duration:        16.000
+Plan quality:    16.000
+     Plan file:       src/ex1/results/domain-result-problem5-t.txt_3.SOL
+

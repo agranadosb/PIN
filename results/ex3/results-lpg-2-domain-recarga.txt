@@ -1,0 +1,52 @@
+./planners/lpg-td -o src/ex3/domain-recarga.pddl -f src/ex3/problem2.pddl -n 3 -out src/ex3/results/domain-recarga-result-problem2.txt
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ./planners/lpg-td -o src/ex3/domain-recarga.pddl -f src/ex3/problem2.pddl -n 3 -out src/ex3/results/domain-recarga-result-problem2.txt   
+
+
+Parsing domain file:  domain 'PUERTO' defined ... done.
+Parsing problem file:  problem 'PROBLEMA_SIMPLE' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    2020
+Number of conditional actions :       0
+Number of facts               :     356
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.08 seconds
+
+ first_solution_cpu_time: 343.85 
+Solution number: 1
+Total time:      343.85
+Search time:     343.77
+Actions:         32
+Duration:        75.000
+Plan quality:    30.000 
+Total Num Flips: 11458
+     Plan file:       src/ex3/results/domain-recarga-result-problem2.txt_1_1.SOL Restart using null plan
+
+Solution number: 2
+Total time:      383.69
+Search time:     383.61
+Actions:         42
+Duration:        115.000
+Plan quality:    25.000 
+Total Num Flips: 14721
+     Plan file:       src/ex3/results/domain-recarga-result-problem2.txt_2_1.SOL

@@ -1,0 +1,581 @@
+make optic PROBLEM=2 EX=1 N=3 > resutls-optic-2.txt
+make optic PROBLEM=1 EX=1 N=3 > resutls-optic-1.txt
+make optic PROBLEM=3 EX=1 N=3 > resutls-optic-3.txt
+make optic PROBLEM=4 EX=1 N=3 > resutls-optic-4.txt
+make optic PROBLEM=eva EX=1 N=3 > resutls-optic-eva.txt
+make optic PROBLEM=5 EX=1 N=3 > resutls-optic-5.txt
+make lpg PROBLEM=2 EX=1 N=3 > resutls-lpg-2.txt
+make lpg PROBLEM=1 EX=1 N=3 > resutls-lpg-1.txt
+make lpg PROBLEM=3 EX=1 N=3 > resutls-lpg-3.txt
+make lpg PROBLEM=4 EX=1 N=3 > resutls-lpg-4.txt
+make lpg PROBLEM=5 EX=1 N=3 > resutls-lpg-5.txt
+make lpg PROBLEM=eva EX=1 N=3 > resutls-lpg-eva.txt
+make optic PROBLEM=2 EX=1 N=3
+make optic PROBLEM=1 EX=1 N=3
+make optic PROBLEM=4 EX=1 N=3
+make optic PROBLEM=3 EX=1 N=3
+make optic PROBLEM=eva EX=1 N=3
+make optic PROBLEM=5 EX=1 N=3
+make lpg PROBLEM=2 EX=1 N=3
+make lpg PROBLEM=1 EX=1 N=3
+make lpg PROBLEM=3 EX=1 N=3
+make lpg PROBLEM=4 EX=1 N=3
+make lpg PROBLEM=5 EX=1 N=3
+make lpg PROBLEM=eva EX=1 N=3
+make optic PROBLEM=1 EX=1 N=3 > resutls-optic-1.txt
+make optic PROBLEM=2 EX=1 N=3 > resutls-optic-2.txt
+make optic PROBLEM=3 EX=1 N=3 > resutls-optic-3.txt
+make optic PROBLEM=4 EX=1 N=3 > resutls-optic-4.txt
+make optic PROBLEM=5 EX=1 N=3 > resutls-optic-5.txt
+make optic PROBLEM=eva EX=1 N=3 > resutls-optic-eva.txt
+make lpg PROBLEM=1 EX=1 N=3 > resutls-lpg-1.txt
+make lpg PROBLEM=2 EX=1 N=3 > resutls-lpg-2.txt
+make lpg PROBLEM=3 EX=1 N=3 > resutls-lpg-3.txt
+make lpg PROBLEM=5 EX=1 N=3 > resutls-lpg-5.txt
+make lpg PROBLEM=4 EX=1 N=3 > resutls-lpg-4.txt
+make lpg PROBLEM=eva EX=1 N=3 > resutls-lpg-eva.txt
+make optic PROBLEM=1 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-domain-recarga.txt
+make optic PROBLEM=1 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=2 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=2 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=3 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-domain-recarga.txt
+make optic PROBLEM=4 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=4 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=5 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=eva EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=1-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=2 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=4 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=3 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=eva EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=1-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=5 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=3-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-t-domain-no-recarga.txt
+make lpg PROBLEM=3-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=5-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-t-domain-recarga.txt
+make lpg PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=4-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-t-domain-recarga.txt
+make lpg PROBLEM=5-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-t-domain-no-recarga.txt
+make lpg PROBLEM=4-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-t-domain-no-recarga.txt
+make lpg PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-t-domain-recarga.txt
+make optic PROBLEM=2 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=1 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=4 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=3 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-domain-recarga.txt
+make optic PROBLEM=5 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-domain-recarga.txt
+make optic PROBLEM=4 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-domain-recarga.txt
+make optic PROBLEM=eva EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=eva EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=5 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=1 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-domain-recarga.txt
+make optic PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=5 EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=eva EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=5 EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=3-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-t-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=5-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-t-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=4-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-t-domain-no-recarga.txt
+make lpg PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-t-domain-recarga.txt
+make lpg PROBLEM=1-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=3-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=4-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-t-domain-recarga.txt
+make lpg PROBLEM=eva-t EX=1 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=5-t EX=1 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-t-domain-recarga.txt
+make optic PROBLEM=1 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=3 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=2 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-domain-recarga.txt
+make optic PROBLEM=4 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=3 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-domain-recarga.txt
+make optic PROBLEM=5 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=4 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=1-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=eva EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=1-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-t-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=2 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=3 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-domain-recarga.txt
+make optic PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=3 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=3-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=1-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=1-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=3-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-t-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=4 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=4-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-t-domain-no-recarga.txt
+make lpg PROBLEM=4-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-t-domain-recarga.txt
+make lpg PROBLEM=5-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-t-domain-recarga.txt
+make lpg PROBLEM=5-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-t-domain-no-recarga.txt
+make lpg PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-t-domain-recarga.txt
+make optic PROBLEM=1 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=3 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-domain-recarga.txt
+make optic PROBLEM=2 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=4 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=4 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=5 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=eva EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=1-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=2 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=3 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=4 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=5 EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=eva EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=1-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=3-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-t-domain-recarga.txt
+make lpg PROBLEM=3-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-t-domain-no-recarga.txt
+make lpg PROBLEM=4-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-t-domain-no-recarga.txt
+make lpg PROBLEM=4-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-t-domain-recarga.txt
+make lpg PROBLEM=5-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-t-domain-no-recarga.txt
+make lpg PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=5-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-t-domain-recarga.txt
+make lpg PROBLEM=eva-t EX=2 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-t-domain-recarga.txt
+make optic PROBLEM=1 EX=2 N=3 > results/ex1/results-optic-1.txt
+make optic PROBLEM=2 EX=2 N=3 > results/ex1/results-optic-2.txt
+make optic PROBLEM=3 EX=2 N=3 > results/ex1/results-optic-3.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-domain-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-4-t-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-5-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-eva-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-eva-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-optic-3-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-eva-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-optic-5-t-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex2/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex2/results-lpg-4-domain-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-domain-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-domain-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-t-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-t-domain-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-domain-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-t-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-t-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-t-domain-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-4-domain-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-t-domain-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-eva-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-3-domain-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-domain-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-5-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-t-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-3-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-t-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-5-domain-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-4-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-t-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-t-domain-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-domain-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-domain-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-domain-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-domain-no-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-t-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-t-domain-no-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-3-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-t-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-eva-domain-recarga.txt
+make optic PROBLEM=2 EX=1 N=3 > results/ex1/results-optic-2.txt
+make optic PROBLEM=1 EX=1 N=3 > results/ex1/results-optic-1.txt
+make optic PROBLEM=4 EX=1 N=3 > results/ex1/results-optic-4.txt
+make optic PROBLEM=eva EX=1 N=3 > results/ex1/results-optic-eva.txt
+make optic PROBLEM=3 EX=1 N=3 > results/ex1/results-optic-3.txt
+make optic PROBLEM=5 EX=1 N=3 > results/ex1/results-optic-5.txt
+make lpg PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-1.txt
+make lpg PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-4.txt
+make lpg PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-2.txt
+make lpg PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-3.txt
+make lpg PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-5.txt
+make ff PROBLEM=1 EX=1 N=3 > results/ex1/results-ff-1.txt
+make ff PROBLEM=2 EX=1 N=3 > results/ex1/results-ff-2.txt
+make ff PROBLEM=4 EX=1 N=3 > results/ex1/results-ff-4.txt
+make lpg PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-eva.txt
+make ff PROBLEM=3 EX=1 N=3 > results/ex1/results-ff-3.txt
+make ff PROBLEM=5 EX=1 N=3 > results/ex1/results-ff-5.txt
+make ff PROBLEM=eva EX=1 N=3 > results/ex1/results-ff-eva.txt
+make optic PROBLEM=2 EX=1 N=3 > results/ex1/results-optic-2.txt
+make optic PROBLEM=1 EX=1 N=3 > results/ex1/results-optic-1.txt
+make optic PROBLEM=3 EX=1 N=3 > results/ex1/results-optic-3.txt
+make optic PROBLEM=4 EX=1 N=3 > results/ex1/results-optic-4.txt
+make optic PROBLEM=eva EX=1 N=3 > results/ex1/results-optic-eva.txt
+make optic PROBLEM=5 EX=1 N=3 > results/ex1/results-optic-5.txt
+make lpg PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-1.txt
+make lpg PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-2.txt
+make lpg PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-3.txt
+make lpg PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-4.txt
+make lpg PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-5.txt
+make lpg PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-eva.txt
+make lpg-t PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-t-1.txt
+make lpg-t PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-t-3.txt
+make lpg-t PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-t-2.txt
+make lpg-t PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-t-4.txt
+make lpg-t PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-t-eva.txt
+make lpg-t PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-t-5.txt
+make ff PROBLEM=1 EX=1 N=3 > results/ex1/results-ff-1.txt
+make ff PROBLEM=4 EX=1 N=3 > results/ex1/results-ff-4.txt
+make ff PROBLEM=5 EX=1 N=3 > results/ex1/results-ff-5.txt
+make ff PROBLEM=2 EX=1 N=3 > results/ex1/results-ff-2.txt
+make ff PROBLEM=3 EX=1 N=3 > results/ex1/results-ff-3.txt
+make ff PROBLEM=eva EX=1 N=3 > results/ex1/results-ff-eva.txt
+make optic PROBLEM=2 EX=1 N=3 > results/ex1/results-optic-2.txt
+make optic PROBLEM=1 EX=1 N=3 > results/ex1/results-optic-1.txt
+make optic PROBLEM=4 EX=1 N=3 > results/ex1/results-optic-4.txt
+make optic PROBLEM=3 EX=1 N=3 > results/ex1/results-optic-3.txt
+make optic PROBLEM=eva EX=1 N=3 > results/ex1/results-optic-eva.txt
+make optic PROBLEM=5 EX=1 N=3 > results/ex1/results-optic-5.txt
+make lpg PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-1.txt
+make lpg PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-3.txt
+make lpg PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-2.txt
+make lpg PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-4.txt
+make lpg PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-5.txt
+make lpg-t PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-t-1.txt
+make lpg PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-eva.txt
+make lpg-t PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-t-3.txt
+make lpg-t PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-t-2.txt
+make lpg-t PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-t-4.txt
+make lpg-t PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-t-5.txt
+make lpg-t PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-t-eva.txt
+make ff PROBLEM=1 EX=1 N=3 > results/ex1/results-ff-1.txt
+make ff PROBLEM=3 EX=1 N=3 > results/ex1/results-ff-3.txt
+make ff PROBLEM=2 EX=1 N=3 > results/ex1/results-ff-2.txt
+make ff PROBLEM=4 EX=1 N=3 > results/ex1/results-ff-4.txt
+make ff PROBLEM=5 EX=1 N=3 > results/ex1/results-ff-5.txt
+make ff PROBLEM=eva EX=1 N=3 > results/ex1/results-ff-eva.txt
+make optic PROBLEM=1 EX=1 N=3 > results/ex1/results-optic-1.txt
+make optic PROBLEM=2 EX=1 N=3 > results/ex1/results-optic-2.txt
+make optic PROBLEM=3 EX=1 N=3 > results/ex1/results-optic-3.txt
+make optic PROBLEM=4 EX=1 N=3 > results/ex1/results-optic-4.txt
+make lpg PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-2.txt
+make optic PROBLEM=eva EX=1 N=3 > results/ex1/results-optic-eva.txt
+make lpg PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-1.txt
+make optic PROBLEM=5 EX=1 N=3 > results/ex1/results-optic-5.txt
+make lpg PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-3.txt
+make lpg PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-4.txt
+make lpg PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-eva.txt
+make lpg PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-5.txt
+make lpg-t PROBLEM=1 EX=1 N=3 > results/ex1/results-lpg-t-1.txt
+make lpg-t PROBLEM=2 EX=1 N=3 > results/ex1/results-lpg-t-2.txt
+make lpg-t PROBLEM=3 EX=1 N=3 > results/ex1/results-lpg-t-3.txt
+make lpg-t PROBLEM=4 EX=1 N=3 > results/ex1/results-lpg-t-4.txt
+make lpg-t PROBLEM=eva EX=1 N=3 > results/ex1/results-lpg-t-eva.txt
+make lpg-t PROBLEM=5 EX=1 N=3 > results/ex1/results-lpg-t-5.txt
+make ff PROBLEM=1 EX=1 N=3 > results/ex1/results-ff-1.txt
+make ff PROBLEM=2 EX=1 N=3 > results/ex1/results-ff-2.txt
+make ff PROBLEM=4 EX=1 N=3 > results/ex1/results-ff-4.txt
+make ff PROBLEM=3 EX=1 N=3 > results/ex1/results-ff-3.txt
+make ff PROBLEM=5 EX=1 N=3 > results/ex1/results-ff-5.txt
+make optic PROBLEM=2 EX=2 N=3 > results/ex2/results-optic-2.txt
+make optic PROBLEM=3 EX=2 N=3 > results/ex2/results-optic-3.txt
+make ff PROBLEM=eva EX=1 N=3 > results/ex1/results-ff-eva.txt
+make optic PROBLEM=4 EX=2 N=3 > results/ex2/results-optic-4.txt
+make optic PROBLEM=1 EX=2 N=3 > results/ex2/results-optic-1.txt
+make optic PROBLEM=5 EX=2 N=3 > results/ex2/results-optic-5.txt
+make optic PROBLEM=eva EX=2 N=3 > results/ex2/results-optic-eva.txt
+make lpg PROBLEM=1 EX=2 N=3 > results/ex2/results-lpg-1.txt
+make lpg PROBLEM=4 EX=2 N=3 > results/ex2/results-lpg-4.txt
+make lpg PROBLEM=2 EX=2 N=3 > results/ex2/results-lpg-2.txt
+make lpg PROBLEM=3 EX=2 N=3 > results/ex2/results-lpg-3.txt
+make lpg PROBLEM=eva EX=2 N=3 > results/ex2/results-lpg-eva.txt
+make lpg PROBLEM=5 EX=2 N=3 > results/ex2/results-lpg-5.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-domain-recarga.txt
+make optic PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-domain-no-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-domain-no-recarga.txt
+make optic PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-domain-recarga.txt
+make optic PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-domain-no-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-domain-no-recarga.txt
+make optic PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-domain-recarga.txt
+make optic PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-domain-recarga.txt
+make optic PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-2-t-domain-recarga.txt
+make optic PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-2-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-1-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-3-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-4-t-domain-no-recarga.txt
+make optic PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-1-t-domain-no-recarga.txt
+make optic PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-4-t-domain-recarga.txt
+make optic PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-3-t-domain-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-5-t-domain-no-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-optic-eva-t-domain-no-recarga.txt
+make optic PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-5-t-domain-recarga.txt
+make optic PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-optic-eva-t-domain-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-domain-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-3-domain-no-recarga.txt
+make lpg PROBLEM=2 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-5-domain-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-domain-no-recarga.txt
+make lpg PROBLEM=5 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-5-domain-no-recarga.txt
+make lpg PROBLEM=1 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-domain-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-4-domain-no-recarga.txt
+make lpg PROBLEM=4 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-4-domain-recarga.txt
+make lpg PROBLEM=3 EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-3-domain-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-eva-domain-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-2-t-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-1-t-domain-no-recarga.txt
+make lpg PROBLEM=2-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-2-t-domain-recarga.txt
+make lpg PROBLEM=3-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-3-t-domain-no-recarga.txt
+make lpg PROBLEM=3-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-3-t-domain-recarga.txt
+make lpg PROBLEM=4-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-4-t-domain-recarga.txt
+make lpg PROBLEM=eva EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-eva-domain-no-recarga.txt
+make lpg PROBLEM=1-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-1-t-domain-recarga.txt
+make lpg PROBLEM=4-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-4-t-domain-no-recarga.txt
+make lpg PROBLEM=5-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-5-t-domain-no-recarga.txt
+make lpg PROBLEM=5-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-5-t-domain-recarga.txt
+make lpg PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-recarga > results/ex3/results-lpg-eva-t-domain-recarga.txt
+make lpg PROBLEM=eva-t EX=3 N=3 DOMAIN=domain-no-recarga > results/ex3/results-lpg-eva-t-domain-no-recarga.txt
